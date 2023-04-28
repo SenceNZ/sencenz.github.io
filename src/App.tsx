@@ -2,7 +2,7 @@ import { ArrowRightCircleIcon } from "@heroicons/react/20/solid";
 
 function App() {
   return (
-    <div className="bg-gradient-to-b from-cyan-50 via-cyan-100 to-cyan-200 text-slate-700">
+    <div className="bg-fixed bg-gradient-to-b from-cyan-50 via-cyan-100 to-cyan-300 text-slate-700">
       <div className="container mx-auto min-h-screen px-8 py-12">
         <img className="w-80" src="/logo_w_text.png" />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-4 lg:gap-y-0">
@@ -28,13 +28,13 @@ function App() {
             </a>
           </div>
           <div className="flex flex-wrap justify-center gap-12">
-            <div className="md:basis-[calc(50%-1.5rem)] rounded-3xl drop-shadow-xl bg-white">
+            <div className="md:basis-[calc(50%-1.5rem)] rounded-xl drop-shadow-xl bg-white">
               <img src="/chart_1.png" />
             </div>
-            <div className="md:basis-[calc(50%-1.5rem)] rounded-3xl drop-shadow-xl bg-white">
+            <div className="md:basis-[calc(50%-1.5rem)] rounded-xl drop-shadow-xl bg-white">
               <img src="/chart_2.png" />
             </div>
-            <div className="md:basis-[calc(50%-1.5rem)] rounded-3xl drop-shadow-xl bg-white">
+            <div className="md:basis-[calc(50%-1.5rem)] rounded-xl drop-shadow-xl bg-white">
               <img src="/chart_3.png" />
             </div>
           </div>
