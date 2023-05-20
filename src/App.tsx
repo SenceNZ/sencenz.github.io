@@ -1,6 +1,12 @@
 import { ArrowRightCircleIcon } from "@heroicons/react/20/solid";
 
 function App() {
+  const { timeZone } = Intl.DateTimeFormat().resolvedOptions();
+
+  const country = timeZone.includes("Pacific")
+    ? "Aotearoa"
+    : "Aotearoa (New Zealand)";
+
   return (
     <div className="bg-fixed bg-gradient-to-b from-cyan-50 via-cyan-100 to-cyan-300 text-slate-700">
       <div className="container mx-auto min-h-screen px-8 py-12">
@@ -40,7 +46,7 @@ function App() {
           </div>
         </div>
         <div className="sticky mt-12 top-[100vh] flex justify-center">
-          <div>Made with 🖤 in Aotearoa</div>
+          <div>Made with 🖤 in {country}</div>
         </div>
       </div>
     </div>
