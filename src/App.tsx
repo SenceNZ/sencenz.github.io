@@ -24,14 +24,23 @@ function App() {
               Engage with your audience like never before. Revolutionise your
               content creation with our AI-powered analytics tool. Coming soon.
             </div>
-            <a
-              className="text-xl text-white bg-cyan-500 rounded-full pl-4 pr-3 py-2.5"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSehYzi8HmT2OrheJ4aoD3dg8ZFawyuLR9uhYVs-yO3dd6QAjA/viewform"
-              target="_blank"
-            >
-              <span className="align-bottom mr-1">Join the waitlist </span>
-              <ArrowRightCircleIcon className="w-7 inline-block align-bottom" />
-            </a>
+            <div className="text-xl text-white bg-cyan-500 rounded-full pl-4 pr-3 py-2.5 w-fit mb-3">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSehYzi8HmT2OrheJ4aoD3dg8ZFawyuLR9uhYVs-yO3dd6QAjA/viewform"
+                target="_blank"
+              >
+                <span className="align-bottom mr-1">Join the waitlist</span>
+                <ArrowRightCircleIcon className="w-7 inline-block align-bottom" />
+              </a>
+            </div>
+            <div className="text-xl bg-white text-cyan-500 rounded-full pl-4 pr-3 py-2.5 w-fit">
+              <a href="https://dev.chatrlyst.com">
+                <span className="align-bottom mr-1">
+                  Have early access? Log in here
+                </span>
+                <ArrowRightCircleIcon className="w-7 inline-block align-bottom" />
+              </a>
+            </div>
           </div>
           <div className="flex flex-wrap justify-center gap-12">
             <div className="md:basis-[calc(50%-1.5rem)] rounded-xl drop-shadow-xl bg-white">
