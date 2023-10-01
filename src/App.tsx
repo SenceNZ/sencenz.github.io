@@ -54,8 +54,11 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="sticky mt-12 top-[100vh] flex justify-center">
-          <div>Made with 🖤 in {country}</div>
+        <div className="sticky mt-12 top-[100vh] flex flex-col items-center justify-center py-3">
+          <div>made with 🖤 in {country}</div>
+          <div className="text-xs text-slate-500">
+            Copyright ©️ 2023 Chatrlyst All rights reserved.
+          </div>
         </div>
       </div>
     </div>
