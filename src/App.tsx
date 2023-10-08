@@ -34,7 +34,7 @@ function App() {
               </a>
             </div>
             <div className="text-xl bg-white text-cyan-500 rounded-full pl-4 pr-3 py-2.5 w-fit">
-              <a href="https://dev.chatrlyst.com">
+              <a href="https://app.chatrlyst.com">
                 <span className="align-bottom mr-1">
                   Have early access? Log in here
                 </span>
