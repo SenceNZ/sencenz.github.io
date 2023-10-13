@@ -22,7 +22,7 @@
                         <div aria-hidden="true" id="layer" class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition duration-500 dark:bg-darker/70 lg:hidden"></div>
                         <div id="navlinks" class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-auto lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none dark:lg:bg-transparent">
                             <div class="text-gray-600 dark:text-gray-300 lg:pr-4">
-                                <ul class="space-y-6 text-base font-medium tracking-wide lg:flex lg:space-y-0 lg:text-sm">
+                                <ul class="space-y-6 font-medium tracking-wide lg:flex lg:space-y-0">
                                     <li>
                                         <a href="#product" class="nav-link block transition hover:text-primary dark:hover:text-primaryLight lg:px-4">
                                             <span>Product</span>
@@ -48,7 +48,7 @@
 
                             <div class="mt-12 -ml-1 flex w-full flex-col space-y-2 border-primary/10 dark:border-gray-700 sm:flex-row md:w-max lg:mt-0 lg:mr-6 lg:space-y-0 lg:border-l lg:pl-6">
                                 <a href="https://app.chatrlyst.com" class="relative ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-primaryLight sm:px-4 lg:before:border lg:before:border-gray-200 lg:before:bg-gray-100 lg:dark:before:bg-gray-800">
-                                    <span class="relative text-sm font-semibold text-white dark:text-gray-900 lg:text-primary lg:dark:text-white">Log in</span>
+                                    <span class="relative font-medium text-white dark:text-gray-900 lg:text-primary lg:dark:text-white">Log in</span>
                                 </a>
                             </div>
                             <button aria-label="switch theme" class="switcher group relative hidden h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 lg:flex">
@@ -271,166 +271,58 @@
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section id="company" class="pt-16 md:pt-32">
-            <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
-                <div class="items-center justify-center space-y-6 md:flex md:gap-6 md:space-y-0">
-                    <div class="md:w-1/2 lg:w-3/5">
-                        <img class="h-full rounded-3xl object-cover md:-ml-8" src="./../images/hero-stats-login.webp" alt="tailus components" loading="lazy" width="1865" height="1750" />
-                    </div>
-                    <div class="md:w-1/2">
-                        <span class="text-sm font-semibold uppercase tracking-widest text-primary dark:text-secondaryLight">Company</span>
-                        <h2 class="my-8 text-4xl font-bold text-gray-900 dark:text-white lg:text-5xl">Help great teams become <span class="bg-gradient-to-r from-primaryLight to-secondaryLight bg-clip-text text-transparent">dream teams</span></h2>
-                        <p class="mb-4 text-gray-600 dark:text-gray-300">Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.</p>
-                        <p class="text-gray-600 dark:text-gray-300">Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at? Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit alias sapiente maxime repellendus impedit commodi blanditiis debitis rerum, quisquam aspernatur quod aliquid molestiae eveniet suscipit, natus dolore? Vero, eum voluptatem?</p>
-                    </div>
+            <div class="relative pt-32">
+                <div aria-hidden="true" class="absolute inset-0 top-60 grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-30">
+                    <div class="h-60 bg-gradient-to-br from-primary to-purple-400 blur-[106px] dark:from-blue-700"></div>
+                    <div class="h-40 bg-gradient-to-r from-cyan-400 to-sky-300 blur-[106px] dark:to-indigo-600"></div>
                 </div>
-            </div>
-        </section>
-
-        <section id="features" class="relative mb-32 pt-32">
-            <div aria-hidden="true" class="absolute inset-0 top-60 grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-30">
-                <div class="h-60 bg-gradient-to-br from-primary to-purple-400 blur-[106px] dark:from-blue-700"></div>
-                <div class="h-40 bg-gradient-to-r from-cyan-400 to-sky-300 blur-[106px] dark:to-indigo-600"></div>
-            </div>
-            <div class="relative mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
-                <div class="text-center">
-                    <h2 class="text-4xl font-bold text-gray-800 dark:text-white xl:text-5xl">A technology-first approach</h2>
-                    <p class="mx-auto mt-6 text-gray-700 dark:text-gray-300 md:w-3/4 lg:w-3/5">A growing team doesn't need to mean growing pains. Privacy, and the right tool for every step of your journey - Jira Software friction - company size.</p>
-                </div>
-                <div class="mt-16 grid gap-8 sm:mx-auto sm:w-2/3 md:w-full md:grid-cols-2 lg:grid-cols-3">
-                    <div class="rounded-3xl border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:p-12">
-                        <div class="space-y-12 text-center">
-                            <img src="https://cdn-icons-png.flaticon.com/512/584/584796.png" class="mx-auto h-14 w-auto" width="512" height="512" alt="burger illustration" />
-                            <div class="space-y-6">
-                                <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">First feature</h3>
-                                <p class="text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe nesciunt neque culpa hic illum ab qui error repellendus asperiores unde ut ipsam perferendis nemo fuga cum, eum consectetur, magnam doloremque!</p>
-                                <a aria-label="read more" href="#" class="group relative mx-auto flex h-12 w-12 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="-transtransition-transform relative h-5 w-5 text-gray-600 duration-300 group-hover:translate-x-1 dark:text-white">
-                                        <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
+                <div class="relative mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+                    <div class="text-center">
+                        <h2 class="text-4xl font-bold text-gray-800 dark:text-white xl:text-5xl">A technology-first approach</h2>
+                        <p class="mx-auto mt-6 text-gray-700 dark:text-gray-300 md:w-3/4 lg:w-3/5">A growing team doesn't need to mean growing pains. Privacy, and the right tool for every step of your journey - Jira Software friction - company size.</p>
                     </div>
-                    <div class="rounded-3xl border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:p-12">
-                        <div class="space-y-12 text-center">
-                            <img src="https://cdn-icons-png.flaticon.com/512/6106/6106288.png" class="mx-auto h-14 w-auto" width="512" height="512" alt="burger illustration" />
-                            <div class="space-y-6">
-                                <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Second feature</h3>
-                                <p class="text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe nesciunt neque culpa hic illum ab qui error repellendus asperiores unde ut ipsam perferendis nemo fuga cum, eum consectetur, magnam doloremque!</p>
-                                <a aria-label="read more" href="#" class="group relative mx-auto flex h-12 w-12 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="relative h-5 w-5 text-gray-600 transition duration-300 group-hover:translate-x-1 dark:text-white">
-                                        <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rounded-3xl border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:p-12">
-                        <div class="space-y-12 text-center">
-                            <img src="https://cdn-icons-png.flaticon.com/512/4727/4727266.png" class="mx-auto h-14 w-auto" width="512" height="512" alt="burger illustration" />
-                            <div class="space-y-6">
-                                <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Third feature</h3>
-                                <p class="text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe nesciunt neque culpa hic illum ab qui error repellendus asperiores unde ut ipsam perferendis nemo fuga cum, eum consectetur, magnam doloremque!</p>
-                                <a aria-label="read more" href="#" class="group relative mx-auto flex h-12 w-12 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="relative h-5 w-5 text-gray-600 transition duration-300 group-hover:translate-x-1 dark:text-white">
-                                        <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="relative before:absolute before:inset-0 before:h-px before:w-96 before:bg-gradient-to-r before:from-yellow-300 before:via-pink-400 before:to-transparent after:absolute after:inset-0 after:ml-auto after:mt-auto after:h-px after:w-96 after:bg-gradient-to-l after:from-yellow-300 after:via-pink-400 after:to-transparent">
-            <div class="border-y border-gray-200 bg-gray-100 dark:border-gray-700 dark:bg-darker">
-                <div class="relative mx-auto px-6 md:max-w-full md:px-12 lg:max-w-6xl xl:px-0">
-                    <div class="items-end justify-between md:flex">
-                        <div class="h-max py-16 md:w-6/12 xl:w-5/12">
-                            <div class="text-center md:text-left">
-                                <h2 class="text-3xl font-bold text-gray-800 dark:text-white md:w-max md:text-4xl xl:text-5xl">
-                                    One step to improve <br />
-                                    your workflow
-                                </h2>
-                                <p class="mb-8 mt-6 text-gray-600 dark:text-gray-300">Praesentium, atque exercitationem dolorum, iste libero eaque animi illum magnam velit iusto quidem omnis quas! Ad expedita quaerat.</p>
-                                <form action="" class="mt-12">
-                                    <div class="relative flex items-center rounded-full border border-primary/20 bg-white p-1 px-2 shadow-md focus-within:ring-2 dark:border-white/10 dark:bg-dark dark:text-white md:p-2 lg:pr-3">
-                                        <div class="py-3 pl-4 lg:pl-5">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="m-auto h-6 w-6 fill-gray-500 dark:fill-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                                            </svg>
-                                        </div>
-                                        <input autocomplete="email" aria-label="your email" placeholder="Your mail address" class="w-full rounded-full bg-transparent p-4 placeholder-gray-600 outline-none dark:placeholder-white" type="email" />
-                                        <div class="md:pr-1.5 lg:pr-0">
-                                            <button type="button" title="Start buying" class="relative ml-auto h-12 w-16 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 active:duration-75 active:before:scale-95 dark:before:bg-primaryLight sm:w-auto sm:px-6">
-                                                <span class="relative hidden w-max font-semibold text-white dark:text-gray-900 md:block"> Get Started </span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="relative mx-auto h-6 w-6 text-white dark:text-gray-900 md:hidden">
-                                                    <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-
-                        <div class="md:w-[42%] lg:w-1/2">
-                            <img src="./../images/cta-cards.webp" alt="tailus stat cards components" loading="lazy" width="1299" height="678" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="testimonials" class="pt-32">
-            <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
-                <div class="text-center">
-                    <h2 class="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl xl:text-5xl">Trusted by leaders</h2>
-                    <p class="mx-auto mt-6 text-gray-700 dark:text-gray-300 md:w-3/4 lg:w-3/5">A growing team doesn't need to mean growing pains. Privacy, and the right tool for every step of your journey - Jira Software friction - company size.</p>
-                </div>
-                <div class="mt-12 grid gap-8 md:grid-cols-2">
-                    <div class="rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:col-span-2 sm:px-12 lg:col-span-1 lg:row-span-2">
-                        <div class="flex h-full flex-col justify-center space-y-6 md:space-y-8">
-                            <img class="mr-auto h-12 w-auto" src="images/clients/microsoft.svg" loading="lazy" alt="microsoft" />
-                            <p class="text-gray-600 dark:text-gray-300 md:text-lg lg:text-xl">
-                                <span class="font-serif">"</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellat perspiciatis excepturi est. Non ipsum iusto aliquam consequatur repellat provident, omnis ut, sapiente voluptates veritatis cum deleniti repudiandae ad doloribus. <br />
-                                <br />
-                                Esse, sint sit aut ducimus ea ipsam velit saepe earum dolorem, dignissimos minima voluptate quo accusamus corporis, quaerat beatae aliquid. Impedit, accusamus. <span class="font-serif">"</span>
-                            </p>
-                            <div class="flex items-center gap-3">
-                                <img class="h-12 w-12 rounded-full" src="./images/avatars/avatar-2.webp" loading="lazy" alt="user avatar" width="200" height="200" />
-                                <div>
-                                    <h3 class="text-lg font-semibold leading-none text-gray-600 dark:text-gray-200">Andy Doe</h3>
-                                    <span class="text-sm text-gray-500 dark:text-gray-400">Product Designer</span>
+                    <div class="mt-16 grid gap-8 sm:mx-auto sm:w-2/3 md:w-full md:grid-cols-2 lg:grid-cols-3">
+                        <div class="rounded-3xl border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:p-12">
+                            <div class="space-y-12 text-center">
+                                <img src="https://cdn-icons-png.flaticon.com/512/584/584796.png" class="mx-auto h-14 w-auto" width="512" height="512" alt="burger illustration" />
+                                <div class="space-y-6">
+                                    <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">First feature</h3>
+                                    <p class="text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe nesciunt neque culpa hic illum ab qui error repellendus asperiores unde ut ipsam perferendis nemo fuga cum, eum consectetur, magnam doloremque!</p>
+                                    <a aria-label="read more" href="#" class="group relative mx-auto flex h-12 w-12 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="-transtransition-transform relative h-5 w-5 text-gray-600 duration-300 group-hover:translate-x-1 dark:text-white">
+                                            <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd" />
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="space-y-6 rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
-                        <img class="h-12 w-auto" src="images/clients/airbnb.svg" loading="lazy" alt="airbnb" width="" height="" />
-                        <p class="text-gray-600 dark:text-gray-300"><span class="font-serif">"</span>Sit amet consectetur adipisicing elit. Quaerat repellat perspiciatis excepturi est. Provident, omnis ut, sapiente veritatis cum deleniti repudiandae ad doloribus. <span class="font-serif">"</span></p>
-                        <div class="flex items-center gap-3 text-left">
-                            <img class="h-12 w-12 rounded-full" src="./images/avatars/avatar-3.webp" alt="user avatar" width="200" height="200" loading="lazy" />
-                            <div>
-                                <h3 class="text-lg font-semibold leading-none text-gray-600 dark:text-gray-200">Janet Doe</h3>
-                                <span class="text-sm text-gray-500 dark:text-gray-400">UX Designer</span>
+                        <div class="rounded-3xl border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:p-12">
+                            <div class="space-y-12 text-center">
+                                <img src="https://cdn-icons-png.flaticon.com/512/6106/6106288.png" class="mx-auto h-14 w-auto" width="512" height="512" alt="burger illustration" />
+                                <div class="space-y-6">
+                                    <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Second feature</h3>
+                                    <p class="text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe nesciunt neque culpa hic illum ab qui error repellendus asperiores unde ut ipsam perferendis nemo fuga cum, eum consectetur, magnam doloremque!</p>
+                                    <a aria-label="read more" href="#" class="group relative mx-auto flex h-12 w-12 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="relative h-5 w-5 text-gray-600 transition duration-300 group-hover:translate-x-1 dark:text-white">
+                                            <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd" />
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="space-y-6 rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
-                        <img class="h-12 w-auto" src="images/clients/ge.svg" loading="lazy" alt="ge" />
-                        <p class="text-gray-600 dark:text-gray-300"><span class="font-serif">"</span>Sit amet consectetur adipisicing elit. Quaerat repellat perspiciatis excepturi est. Provident, omnis ut, sapiente veritatis cum deleniti repudiandae ad doloribus. <span class="font-serif">"</span></p>
-                        <div class="flex items-center gap-3 text-left">
-                            <img class="h-12 w-12 rounded-full" src="./images/avatars/avatar-4.webp" alt="user avatar" width="200" height="200" loading="lazy" />
-                            <div>
-                                <h3 class="text-lg font-semibold leading-none text-gray-600 dark:text-gray-200">John Doe</h3>
-                                <span class="text-sm text-gray-500 dark:text-gray-400">Product Designer</span>
+                        <div class="rounded-3xl border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:p-12">
+                            <div class="space-y-12 text-center">
+                                <img src="https://cdn-icons-png.flaticon.com/512/4727/4727266.png" class="mx-auto h-14 w-auto" width="512" height="512" alt="burger illustration" />
+                                <div class="space-y-6">
+                                    <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Third feature</h3>
+                                    <p class="text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe nesciunt neque culpa hic illum ab qui error repellendus asperiores unde ut ipsam perferendis nemo fuga cum, eum consectetur, magnam doloremque!</p>
+                                    <a aria-label="read more" href="#" class="group relative mx-auto flex h-12 w-12 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="relative h-5 w-5 text-gray-600 transition duration-300 group-hover:translate-x-1 dark:text-white">
+                                            <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd" />
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -557,6 +449,114 @@
                             <img class="h-8 w-auto lg:h-10 lg:w-auto" src="./../images/clients/ge.svg" loading="lazy" alt="ge" width="" height="" />
                             <img class="h-8 w-auto lg:h-10 lg:w-auto" src="./../images/clients/lilly.png" loading="lazy" alt="lilly" width="" height="" />
                             <img class="h-8 w-auto lg:h-10 lg:w-auto" src="./../images/clients/microsoft.svg" loading="lazy" alt="microsoft" width="" height="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="company" class="pt-16 md:pt-32">
+            <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+                <div class="items-center justify-center space-y-6 md:flex md:gap-6 md:space-y-0">
+                    <div class="md:w-1/2 lg:w-3/5">
+                        <img class="h-full rounded-3xl object-cover md:-ml-8" src="./../images/hero-stats-login.webp" alt="tailus components" loading="lazy" width="1865" height="1750" />
+                    </div>
+                    <div class="md:w-1/2">
+                        <span class="text-sm font-semibold uppercase tracking-widest text-primary dark:text-secondaryLight">Company</span>
+                        <h2 class="my-8 text-4xl font-bold text-gray-900 dark:text-white lg:text-5xl">Help great teams become <span class="bg-gradient-to-r from-primaryLight to-secondaryLight bg-clip-text text-transparent">dream teams</span></h2>
+                        <p class="mb-4 text-gray-600 dark:text-gray-300">Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.</p>
+                        <p class="text-gray-600 dark:text-gray-300">Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at? Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit alias sapiente maxime repellendus impedit commodi blanditiis debitis rerum, quisquam aspernatur quod aliquid molestiae eveniet suscipit, natus dolore? Vero, eum voluptatem?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="relative before:absolute before:inset-0 before:h-px before:w-96 before:bg-gradient-to-r before:from-yellow-300 before:via-pink-400 before:to-transparent after:absolute after:inset-0 after:ml-auto after:mt-auto after:h-px after:w-96 after:bg-gradient-to-l after:from-yellow-300 after:via-pink-400 after:to-transparent">
+            <div class="border-y border-gray-200 bg-gray-100 dark:border-gray-700 dark:bg-darker">
+                <div class="relative mx-auto px-6 md:max-w-full md:px-12 lg:max-w-6xl xl:px-0">
+                    <div class="items-end justify-between md:flex">
+                        <div class="h-max py-16 md:w-6/12 xl:w-5/12">
+                            <div class="text-center md:text-left">
+                                <h2 class="text-3xl font-bold text-gray-800 dark:text-white md:w-max md:text-4xl xl:text-5xl">
+                                    One step to improve <br />
+                                    your workflow
+                                </h2>
+                                <p class="mb-8 mt-6 text-gray-600 dark:text-gray-300">Praesentium, atque exercitationem dolorum, iste libero eaque animi illum magnam velit iusto quidem omnis quas! Ad expedita quaerat.</p>
+                                <form action="" class="mt-12">
+                                    <div class="relative flex items-center rounded-full border border-primary/20 bg-white p-1 px-2 shadow-md focus-within:ring-2 dark:border-white/10 dark:bg-dark dark:text-white md:p-2 lg:pr-3">
+                                        <div class="py-3 pl-4 lg:pl-5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="m-auto h-6 w-6 fill-gray-500 dark:fill-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                                            </svg>
+                                        </div>
+                                        <input autocomplete="email" aria-label="your email" placeholder="Your mail address" class="w-full rounded-full bg-transparent p-4 placeholder-gray-600 outline-none dark:placeholder-white" type="email" />
+                                        <div class="md:pr-1.5 lg:pr-0">
+                                            <button type="button" title="Start buying" class="relative ml-auto h-12 w-16 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 active:duration-75 active:before:scale-95 dark:before:bg-primaryLight sm:w-auto sm:px-6">
+                                                <span class="relative hidden w-max font-semibold text-white dark:text-gray-900 md:block"> Get Started </span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="relative mx-auto h-6 w-6 text-white dark:text-gray-900 md:hidden">
+                                                    <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="md:w-[42%] lg:w-1/2">
+                            <img src="./../images/cta-cards.webp" alt="tailus stat cards components" loading="lazy" width="1299" height="678" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="pt-32">
+            <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl xl:text-5xl">Trusted by leaders</h2>
+                    <p class="mx-auto mt-6 text-gray-700 dark:text-gray-300 md:w-3/4 lg:w-3/5">A growing team doesn't need to mean growing pains. Privacy, and the right tool for every step of your journey - Jira Software friction - company size.</p>
+                </div>
+                <div class="mt-12 grid gap-8 md:grid-cols-2">
+                    <div class="rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:col-span-2 sm:px-12 lg:col-span-1 lg:row-span-2">
+                        <div class="flex h-full flex-col justify-center space-y-6 md:space-y-8">
+                            <img class="mr-auto h-12 w-auto" src="images/clients/microsoft.svg" loading="lazy" alt="microsoft" />
+                            <p class="text-gray-600 dark:text-gray-300 md:text-lg lg:text-xl">
+                                <span class="font-serif">"</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellat perspiciatis excepturi est. Non ipsum iusto aliquam consequatur repellat provident, omnis ut, sapiente voluptates veritatis cum deleniti repudiandae ad doloribus. <br />
+                                <br />
+                                Esse, sint sit aut ducimus ea ipsam velit saepe earum dolorem, dignissimos minima voluptate quo accusamus corporis, quaerat beatae aliquid. Impedit, accusamus. <span class="font-serif">"</span>
+                            </p>
+                            <div class="flex items-center gap-3">
+                                <img class="h-12 w-12 rounded-full" src="./images/avatars/avatar-2.webp" loading="lazy" alt="user avatar" width="200" height="200" />
+                                <div>
+                                    <h3 class="text-lg font-semibold leading-none text-gray-600 dark:text-gray-200">Andy Doe</h3>
+                                    <span class="text-sm text-gray-500 dark:text-gray-400">Product Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6 rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
+                        <img class="h-12 w-auto" src="images/clients/airbnb.svg" loading="lazy" alt="airbnb" width="" height="" />
+                        <p class="text-gray-600 dark:text-gray-300"><span class="font-serif">"</span>Sit amet consectetur adipisicing elit. Quaerat repellat perspiciatis excepturi est. Provident, omnis ut, sapiente veritatis cum deleniti repudiandae ad doloribus. <span class="font-serif">"</span></p>
+                        <div class="flex items-center gap-3 text-left">
+                            <img class="h-12 w-12 rounded-full" src="./images/avatars/avatar-3.webp" alt="user avatar" width="200" height="200" loading="lazy" />
+                            <div>
+                                <h3 class="text-lg font-semibold leading-none text-gray-600 dark:text-gray-200">Janet Doe</h3>
+                                <span class="text-sm text-gray-500 dark:text-gray-400">UX Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-6 rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
+                        <img class="h-12 w-auto" src="images/clients/ge.svg" loading="lazy" alt="ge" />
+                        <p class="text-gray-600 dark:text-gray-300"><span class="font-serif">"</span>Sit amet consectetur adipisicing elit. Quaerat repellat perspiciatis excepturi est. Provident, omnis ut, sapiente veritatis cum deleniti repudiandae ad doloribus. <span class="font-serif">"</span></p>
+                        <div class="flex items-center gap-3 text-left">
+                            <img class="h-12 w-12 rounded-full" src="./images/avatars/avatar-4.webp" alt="user avatar" width="200" height="200" loading="lazy" />
+                            <div>
+                                <h3 class="text-lg font-semibold leading-none text-gray-600 dark:text-gray-200">John Doe</h3>
+                                <span class="text-sm text-gray-500 dark:text-gray-400">Product Designer</span>
+                            </div>
                         </div>
                     </div>
                 </div>
