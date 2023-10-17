@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="chatrlyst sentiment themes ai" />
+        <title>Chatrlyst</title>
+    </head>
+    <body class="min-h-screen overflow-x-hidden bg-white selection:bg-primary/10 selection:text-primary dark:bg-gray-900">
+        <header>
+            <nav id="navbar" class="fixed inset-x-0 z-20 w-full border-b border-gray-300 bg-white/80 shadow-sm backdrop-blur dark:border-gray-700/30 dark:bg-gray-900/80">
+                <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+                    <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-4">
+                        <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
+                            <a href="./#" aria-label="ampire logo" class="nav-link flex items-center space-x-2"> <img src="/favicon.ico" alt="Logo" class="block h-8 w-8 dark:brightness-200 md:hidden" /><img src="/logo_w_text.png" alt="Logo" class="hidden h-12 dark:brightness-200 md:block" /></a>
+                            <button aria-label="humburger" id="hamburger" class="relative -mr-6 p-6 lg:hidden">
+                                <div aria-hidden="true" id="line" class="m-auto h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300"></div>
+                                <div aria-hidden="true" id="line2" class="m-auto mt-2 h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300"></div>
+                            </button>
+                        </div>
+                        <div aria-hidden="true" id="layer" class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition duration-500 dark:bg-darker/70 lg:hidden"></div>
+                        <div id="navlinks" class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-auto lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none dark:lg:bg-transparent">
+                            <div class="text-gray-600 dark:text-gray-300 lg:pr-4">
+                                <ul class="space-y-6 font-medium tracking-wide lg:flex lg:space-y-0">
+                                    <li>
+                                        <a href="./#product" class="nav-link block transition hover:text-primary dark:hover:text-primaryLight lg:px-4">
+                                            <span>Product</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./#pricing" class="nav-link block transition hover:text-primary dark:hover:text-primaryLight lg:px-4">
+                                            <span>Pricing</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./#company" class="nav-link block transition hover:text-primary dark:hover:text-primaryLight lg:px-4">
+                                            <span>About</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./#faqs" class="nav-link block transition hover:text-primary dark:hover:text-primaryLight lg:px-4">
+                                            <span>Contact</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="mt-12 -ml-1 flex w-full flex-col space-y-2 border-primary/10 dark:border-gray-700 sm:flex-row md:w-max lg:mt-0 lg:mr-6 lg:space-y-0 lg:border-l lg:pl-6">
+                                <a href="https://app.chatrlyst.com" class="relative ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-primaryLight sm:px-4 lg:before:border lg:before:border-gray-200 lg:before:bg-gray-100 lg:dark:before:bg-gray-800">
+                                    <span class="relative font-medium text-white dark:text-gray-900 lg:text-primary lg:dark:text-white">Log in</span>
+                                </a>
+                            </div>
+                            <button aria-label="switch theme" class="switcher group relative hidden h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 lg:flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="transistion relative m-auto hidden h-5 w-5 fill-gray-500 duration-300 group-hover:rotate-180 group-hover:fill-yellow-400 dark:block dark:fill-gray-300" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="transistion relative m-auto h-5 w-5 fill-gray-500 duration-300 group-hover:-rotate-90 group-hover:fill-blue-900 dark:hidden" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="fixed top-3 right-14 z-20 sm:right-24 lg:hidden">
+                            <button aria-label="switche theme" class="switcher group relative flex h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="transistion relative m-auto hidden h-5 w-5 fill-gray-500 duration-300 group-hover:rotate-180 group-hover:fill-yellow-400 dark:block dark:fill-gray-300" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="transistion relative m-auto h-5 w-5 fill-gray-500 duration-300 group-hover:-rotate-90 group-hover:fill-blue-900 dark:hidden" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="py-32 sm:pt-40 md:pt-48 lg:pt-56">
+            <div class="mx-auto px-4 sm:px-12 xl:max-w-5xl xl:px-0">
+                <div class="relative z-10 text-center md:mx-auto md:w-5/6 lg:w-4/6">
+                    <h1 class="relative text-center text-4xl font-bold text-gray-900 dark:text-white sm:text-5xl md:text-6xl">Terms of use</h1>
+                    <div class="mt-12 text-left text-gray-700 dark:text-gray-300">
+                        <ol class="pl-4 [counter-reset:section]">
+                            <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">
+                                <span style="color: #4e4e4e" data-mce-style="color: #4e4e4e;"><strong>APPLICATION OF TERMS</strong></span>
+                            </li>
+                            <ol class="pl-4 [counter-reset:section]">
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">These Terms apply to your use of the Website.&nbsp; By accessing and using the Website:</li>
+                                <ol class="pl-4 [counter-reset:section]">
+                                    <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">you agree to these Terms; and&nbsp;</li>
+                                    <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">where your access and use is on behalf of another person (e.g. a company), you confirm that you are authorised to, and do in fact, agree to these Terms on that person’s behalf and that, by agreeing to these Terms on that person’s behalf, that person is bound by these Terms.</li>
+                                </ol>
+                            </ol>
+                            <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">If you do not agree to these Terms, you are not authorised to access and use the Website, and you must immediately stop doing so.&nbsp;&nbsp;</li>
+                        </ol>
+                        <br />
+                        <ol>
+                            <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">
+                                <span style="color: #4e4e4e" data-mce-style="color: #4e4e4e;"><strong>CHANGES</strong></span>
+                            </li>
+                            <ol class="pl-4 [counter-reset:section]">
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">We may change these Terms at any time by updating them on the Website.&nbsp; Unless stated otherwise, any change takes effect immediately.&nbsp; You are responsible for ensuring you are familiar with the latest Terms.&nbsp; By continuing to access and use the Website, you agree to be bound by the changed Terms.&nbsp;</li>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">We may change, suspend, discontinue, or restrict access to, the Website without notice or liability.</li>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]"><strong>These Terms were last updated on 16 October 2023.</strong></li>
+                            </ol>
+                        </ol>
+                        <br />
+                        <ol>
+                            <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">
+                                <span style="color: #4e4e4e" data-mce-style="color: #4e4e4e;"><strong>DEFINITIONS</strong></span>
+                            </li>
+                        </ol>
+                        <p>In these Terms:</p>
+                        <br />
+                        <p><em>including</em> and similar words do not imply any limit</p>
+                        <br />
+                        <p><em>Loss</em> includes loss of profits, savings, revenue or data, and any other claim, damage, loss, liability and cost, including legal costs on a solicitor and own client basis</p>
+                        <br />
+                        <p><em>personal information</em> means information about an identifiable, living person</p>
+                        <br />
+                        <p><em>Terms </em>means these terms and conditions titled <em>Website Terms of Use</em></p>
+                        <br />
+                        <p><em>Underlying System</em> means any network, system, software, data or material that underlies or is connected to the Website&nbsp;</p>
+                        <br />
+                        <p><em>User ID </em>means a unique name and/or password allocated to you to allow you to access certain parts of the Website</p>
+                        <br />
+                        <p><em>We, us or our</em> means Chatrlyst Limited, NZCN 8635688</p>
+                        <br />
+                        <p><em>Website </em>means <a target="_blank" href="https://chatrlyst.com/" rel="noopener" data-mce-href="https://chatrlyst.com/">https://chatrlyst.com/</a></p>
+                        <br />
+                        <p><em>You</em> means you or, if clause 1.1.2 applies, both you and the other person on whose behalf you are acting.</p>
+                        <br />
+                        <ol>
+                            <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">
+                                <span style="color: #4e4e4e" data-mce-style="color: #4e4e4e;"><strong>YOUR OBLIGATIONS&nbsp;</strong></span>
+                            </li>
+                            <ol class="pl-4 [counter-reset:section]">
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">You must provide true, current and complete information in your dealings with us (including when setting up an account), and must promptly update that information as required so that the information remains true, current and complete.</li>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">If you are given a User ID, you must keep your User ID secure and:</li>
+                                <ol class="pl-4 [counter-reset:section]">
+                                    <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">not permit any other person to use your User ID, including not disclosing or providing it to any other person; and&nbsp;</li>
+                                    <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">immediately notify us if you become aware of any disclosure or unauthorised use of your User ID, by sending an email to <strong>hello@chatrlyst.com</strong>.&nbsp;</li>
+                                </ol>
+                            </ol>
+                            <ol>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">You must:</li>
+                                <ol class="pl-4 [counter-reset:section]">
+                                    <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">not act in a way, or use or introduce anything (including any virus, worm, Trojan horse, timebomb, keystroke logger, spyware or other similar feature) that in any way compromises, or may compromise, the Website or any Underlying System, or otherwise attempt to damage or interfere with the Website or any Underlying System; and&nbsp;</li>
+                                    <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">unless with our agreement, access the Website via standard web browsers only and not by any other method.&nbsp; Other methods include scraping, deep-linking, harvesting, data mining, use of a robot or spider, automation, or any similar data gathering, extraction or monitoring method.&nbsp;</li>
+                                </ol>
+                            </ol>
+                            <ol>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">You must obtain our written permission to establish a link to our Website.&nbsp; If you wish to do so, email your request to <strong>hello@chatrlyst.com</strong>.</li>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">You indemnify us against all Loss we suffer or incur as a direct or indirect result of your failure to comply with these Terms, including any failure of a person who accesses and uses our Website by using your User ID.</li>
+                            </ol>
+                        </ol>
+                        <br />
+                        <ol>
+                            <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">
+                                <span style="color: #4e4e4e" data-mce-style="color: #4e4e4e;"><strong>USE OF INFORMATION</strong></span>
+                            </li>
+                            <ol class="pl-4 [counter-reset:section]">
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">We use your personal information to provide you with our services, including processing payments, sending notifications, and maintaining your account.</li>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">We analyse usage data and social media data to improve our services, develop new features, and optimise user experiences. We do not claim ownership of your intellectual property rights in the social media data you provide.</li>
+                            </ol>
+                        </ol>
+                        <br />
+                        <ol>
+                            <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">
+                                <span style="color: #4e4e4e" data-mce-style="color: #4e4e4e;"><strong>DATA SHARING</strong></span>
+                            </li>
+                            <ol class="pl-4 [counter-reset:section]">
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]"><strong>Third-Party Service Providers:</strong> We may share your information with third-party service providers that assist us in delivering our services, such as payment processors and data storage providers. These providers are obligated to maintain the confidentiality of your information.</li>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]"><strong>Legal Compliance:</strong> We may disclose your information if required by law or in response to valid legal requests.</li>
+                            </ol>
+                        </ol>
+                        <br />
+                        <ol>
+                            <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">
+                                <span style="color: #4e4e4e" data-mce-style="color: #4e4e4e;"><strong>DATA SECURITY &amp; RETENTION</strong></span>
+                            </li>
+                            <ol class="pl-4 [counter-reset:section]">
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]"><strong>Security Measures:</strong> We implement industry-standard security measures to protect your information from unauthorised access, disclosure, or alteration. However, you acknowledge that no online service is completely immune to security breaches and use our services at your own risk.</li>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]"><strong>Data Retention: </strong>We will retain the raw data collected from social media platforms only for the duration specified in the terms and conditions of those platforms, as well as for as long as necessary to fulfil the purposes outlined in this Privacy Policy or as required by applicable laws and regulations. The retention periods for different types of data may vary based on the terms of the social media platforms and the purpose for which the data was collected. This data is never shared with third parties, nor is it copied for archival purposes. We do, however, log and retain certain information such as your IP address, request time, request size, and other metrics associated with your account. This data is exclusively used for internal analytics and is never divulged to any third parties</li>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]"><strong>Backup and Archival: </strong>Please note that even after you delete your account, certain data may remain in our backup and archival systems for a limited period of time, consistent with our data retention practices.</li>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]"><strong>Data Protection:</strong> we will implement reasonable security measures to protect your data. However, you acknowledge that no online service can be entirely secure, and you use our services at your own risk.</li>
+                            </ol>
+                        </ol>
+                        <br />
+                        <ol>
+                            <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">
+                                <span style="color: #4e4e4e" data-mce-style="color: #4e4e4e;"><strong>INTELLECTUAL PROPERTY</strong></span>
+                            </li>
+                        </ol>
+                        <p>We (and our licensors) own all proprietary and intellectual property rights in the Website (including all information, data, text, graphics, artwork, photographs, logos, icons, sound recordings, videos and <em>look and feel</em>), and the Underlying Systems.</p>
+                        <br />
+                        <ol>
+                            <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">
+                                <span style="color: #4e4e4e" data-mce-style="color: #4e4e4e;"><strong>DISCLAIMERS</strong></span>
+                            </li>
+                            <ol class="pl-4 [counter-reset:section]">
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">To the extent permitted by law, we and our licensors have no liability or responsibility to you or any other person for any Loss in connection with:</li>
+                                <ol>
+                                    <ol class="pl-4 [counter-reset:section]">
+                                        <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">the Website being unavailable (in whole or in part) or performing slowly;</li>
+                                        <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">any error in, or omission from, any information made available through the Website;</li>
+                                        <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">any exposure to viruses or other forms of interference which may damage your computer system or expose you to fraud when you access or use the Website.&nbsp; To avoid doubt, you are responsible for ensuring the process by which you access and use the Website protects you from this; and</li>
+                                        <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">any site linked from the Website.&nbsp; Any link on the Website to other sites does not imply any endorsement, approval or recommendation of, or responsibility for, those sites or their contents, operations, products or operators.&nbsp;</li>
+                                    </ol>
+                                </ol>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">We make no representation or warranty that the Website is appropriate or available for use in all countries or that the content satisfies the laws of all countries.&nbsp; You are responsible for ensuring that your access to and use of the Website is not illegal or prohibited, and for your own compliance with applicable local laws.&nbsp;</li>
+                            </ol>
+                        </ol>
+                        <br />
+                        <ol>
+                            <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">
+                                <span style="color: #4e4e4e" data-mce-style="color: #4e4e4e;"><strong>PAYMENT &amp; SUBSCRIPTION&nbsp;</strong></span>
+                            </li>
+                            <ol class="pl-4 [counter-reset:section]">
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]"><strong>Fees: </strong>The use of certain features on the website may require payment of fees as specified in the pricing plan. You agree to pay all applicable fees in a timely manner.</li>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]"><strong>Subscription Cancellations: </strong>You have the right to cancel your subscription at any time. If you cancel your subscription, you will continue to have access to the services for the remainder of the billing cycle, but no refunds will be provided for unused portions of your subscription term.</li>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]"><strong>Refunds: </strong>We do not provide refunds for subscription fees already paid, including in cases of early cancellation or unused subscription periods.</li>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]"><strong>Data Credits:</strong> The pricing plan includes a monthly data quota for social media data analysis. If you exceed your monthly data quota, you have the option to purchase additional data credits to continue using our services. The pricing and terms for purchasing additional data credits will be provided on our platform.</li>
+                            </ol>
+                        </ol>
+                        <br />
+                        <ol>
+                            <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">
+                                <span style="color: #4e4e4e" data-mce-style="color: #4e4e4e;"><strong>LIABILITY&nbsp;</strong></span>
+                            </li>
+                            <ol class="pl-4 [counter-reset:section]">
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">To the maximum extent permitted by law:</li>
+                                <ol>
+                                    <ol class="pl-4 [counter-reset:section]">
+                                        <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">you access and use the Website at your own risk; and&nbsp;</li>
+                                        <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">we are not liable or responsible to you or any other person for any Loss under or in connection with these Terms, the Website, or your access and use of (or inability to access or use) the Website.&nbsp; This exclusion applies regardless of whether our liability or responsibility arises in contract, tort (including negligence), equity, breach of statutory duty, or otherwise.&nbsp;</li>
+                                    </ol>
+                                </ol>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">Except to the extent permitted by law, nothing in these Terms has the effect of contracting out of the New Zealand Consumer Guarantees Act 1993 or any other consumer protection law that cannot be excluded.&nbsp; To the extent our liability cannot be excluded but can be limited, our liability is limited to NZD100.</li>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">To the maximum extent permitted by law and only to the extent clauses 7.1 and 7.2 of these Terms do not apply, our total liability to you under or in connection with these Terms, or in connection with the Website, or your access and use of (or inability to access or use) the Website, must not exceed NZD100.&nbsp;</li>
+                            </ol>
+                        </ol>
+                        <br />
+                        <ol>
+                            <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">
+                                <span style="color: #4e4e4e" data-mce-style="color: #4e4e4e;"><strong>PRIVACY POLICY</strong></span>
+                            </li>
+                            <ol class="pl-4 [counter-reset:section]">
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">You are not required to provide personal information to us, although in some cases if you choose not to do so then we will be unable to make certain sections of the Website available to you.&nbsp; For example, we may need to have your contact information in order to provide you with updates from our Website.&nbsp;&nbsp;</li>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">We collect non-personal information about your interactions with our platform, such as log data, device information, and usage patterns. Additionally, if you choose to provide access to your social media accounts, we may collect social media data, including comments and other content. Please note that any social media data collected and processed by us remains your intellectual property.</li>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">When you provide personal information to us, we will comply with the New Zealand Privacy Act 2020.</li>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">The personal information you provide to us (including any information provided if you register for an account) is collected and may be used for communicating with you, statistical analysis, the marketing by us of products and services to you, credit checks (if necessary), and research and development.</li>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">
+                                    We may also collect technical information whenever you log on to, or visit the public version of, our Website.&nbsp; This may include information about the way users arrive at, browse through and interact with our Website.&nbsp; We may collect this type of technical information through the use of <em>cookies</em> and other means.&nbsp; <em>Cookies</em> are alphanumeric identifiers that we transfer to your computer’s hard drive to enable our systems to recognise your browser.&nbsp; If you want to disable <em>cookies</em>, you may do so by changing the settings on your browser.&nbsp; However, if you do so, you may not be able to use all of the functions on the Website.&nbsp; We use the technical information we collect to have a better understanding of the way people use our Website, to improve the way it works and to personalise it to be more relevant and useful to your particular needs.&nbsp; We may also use this information to assist in making any
+                                    advertising we display on the Website more personalised and applicable to your interests.
+                                </li>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">Generally, we do not disclose personal information to third parties for them to use for their own purposes.&nbsp; However, some of the circumstances in which we may do this are:</li>
+                                <ol>
+                                    <ol class="pl-4 [counter-reset:section]">
+                                        <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">to service providers and other persons working with us to make the Website available or improve or develop its functionality (e.g. we may use a third party supplier to host the Website);</li>
+                                        <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">in relation to the proposed purchase or acquisition of our business or assets; or</li>
+                                        <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">where required by applicable law or any court, or in response to a legitimate request by a law enforcement agency.</li>
+                                    </ol>
+                                </ol>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">Any personal information you provide to us may be stored on the secure servers of our trusted service providers, which may be located outside New Zealand.&nbsp; This may involve the transfer of your personal information to countries which have less legal protection for personal information than New Zealand.</li>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">You have the right to request access to and correction of any of the personal information we hold about you.&nbsp; If you would like to exercise these rights, please email us at <strong>hello@chatrlyst.com</strong>.</li>
+                            </ol>
+                        </ol>
+                        <br />
+                        <ol>
+                            <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">
+                                <span style="color: #4e4e4e" data-mce-style="color: #4e4e4e;"><strong>SUSPENSION AND TERMINATION</strong></span>
+                            </li>
+                            <ol class="pl-4 [counter-reset:section]">
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">Without prejudice to any other right or remedy available to us, if we consider that you have breached these Terms or we otherwise consider it appropriate, we may immediately, and without notice, suspend or terminate your access to the Website (or any part of it).</li>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">On suspension or termination, you must immediately cease using the Website and must not attempt to gain further access.</li>
+                            </ol>
+                        </ol>
+                        <br />
+                        <ol>
+                            <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">
+                                <span style="color: #4e4e4e" data-mce-style="color: #4e4e4e;"><strong>GENERAL</strong></span>
+                            </li>
+                            <ol class="pl-4 [counter-reset:section]">
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">If we need to contact you, we may do so by email or by posting a notice on the Website.&nbsp; You agree that this satisfies all legal requirements in relation to written communications.&nbsp;</li>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">These Terms, and any dispute relating to these Terms or the Website, are governed by and must be interpreted in accordance with the laws of New Zealand.&nbsp; Each party submits to the non-exclusive jurisdiction of the Courts of New Zealand in relation to any dispute connected with these Terms or the Website.</li>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">For us to waive a right under these Terms, the waiver must be in writing.</li>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">Clauses which, by their nature, are intended to survive termination of these Terms, including clauses 4.5, 5, 6, 7, 10.1, continue in force.</li>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">If any part or provision of these Terms is or becomes illegal, unenforceable, or invalid, that part or provision is deemed to be modified to the extent required to remedy the illegality, unenforceability or invalidity.&nbsp; If a modification is not possible, the part or provision must be treated for all purposes as severed from these Terms.&nbsp; The remainder of these Terms will be binding on you.</li>
+                                <li class="pl-4 [counter-increment:section] marker:[content:counters(section,'.')]">These Terms set out everything agreed by the parties relating to your use of the Website and supersede and cancel anything discussed, exchanged or agreed prior to you agreeing to these Terms.&nbsp; The parties have not relied on any representation, warranty or agreement relating to the Website that is not expressly set out in the Terms, and no such representation, warranty or agreement has any effect from the date you agreed to these Terms.&nbsp;&nbsp;</li>
+                            </ol>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="border-t border-gray-100 pt-32 pb-8 dark:border-gray-800">
+            <div>
+                <div class="m-auto space-y-8 px-4 text-sm text-gray-600 dark:text-gray-400 sm:px-12 xl:max-w-6xl xl:px-0">
+                    <div class="grid grid-cols-8 gap-6 md:gap-0">
+                        <div class="col-span-8 md:col-span-2 lg:col-span-3">
+                            <div class="flex h-full items-center justify-center gap-6 md:items-start md:py-0">
+                                <a href="https://www.linkedin.com/company/chatrlyst" target="blank" aria-label="github" class="hover:text-primary dark:hover:text-primaryLight">
+                                    <span class="sr-only">LinkedIn</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 24 24">
+                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                    </svg>
+                                </a>
+                                <a href="./privacy.html">Privacy</a>
+                                <a href="./terms.html">Terms</a>
+                            </div>
+                        </div>
+                        <div class="col-span-8 md:col-span-6 lg:col-span-5">
+                            <div class="flex flex-col text-center md:flex-row md:justify-between md:pl-16">
+                                <div>Made with 🖤 in Aotearoa</div>
+                                <div>&copy; 2023 Chatrlyst Limited. All rights reserved.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script type="module" src="../app.js"></script>
+    </body>
+</html>
