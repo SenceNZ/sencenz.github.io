@@ -7,66 +7,170 @@
         <meta name="description" content="chatrlyst sentiment themes ai" />
         <title>Chatrlyst</title>
     </head>
-    <body class="min-h-screen scroll-smooth bg-white selection:bg-primary/10 selection:text-primary dark:bg-gray-900">
+    <body
+        class="min-h-screen scroll-smooth bg-white selection:bg-primary/10 selection:text-primary dark:bg-gray-900"
+    >
         <header>
-            <nav id="navbar" class="fixed inset-x-0 z-20 w-full border-b border-gray-300 bg-white/80 shadow-sm backdrop-blur dark:border-gray-700/30 dark:bg-gray-900/80">
+            <nav
+                id="navbar"
+                class="fixed inset-x-0 z-20 w-full border-b border-gray-300 bg-white/80 shadow-sm backdrop-blur dark:border-gray-700/30 dark:bg-gray-900/80"
+            >
                 <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
-                    <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-4">
-                        <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
-                            <a href="./#" aria-label="ampire logo" class="nav-link flex items-center space-x-2"> <img src="/favicon.ico" alt="Logo" class="block h-8 w-8 dark:brightness-200 md:hidden" /><img src="/logo_w_text.png" alt="Logo" class="hidden h-12 dark:brightness-200 md:block" /></a>
-                            <button aria-label="humburger" id="hamburger" class="relative -mr-6 p-6 lg:hidden">
-                                <div aria-hidden="true" id="line" class="m-auto h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300"></div>
-                                <div aria-hidden="true" id="line2" class="m-auto mt-2 h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300"></div>
+                    <div
+                        class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-4"
+                    >
+                        <div
+                            class="relative z-20 flex w-full justify-between md:px-0 lg:w-max"
+                        >
+                            <a
+                                href="./#"
+                                aria-label="ampire logo"
+                                class="nav-link flex items-center space-x-2"
+                            >
+                                <img
+                                    src="/favicon.ico"
+                                    alt="Logo"
+                                    class="block h-8 w-8 dark:brightness-200 md:hidden" /><img
+                                    src="/logo_w_text.png"
+                                    alt="Logo"
+                                    class="hidden h-12 dark:brightness-200 md:block"
+                            /></a>
+                            <button
+                                aria-label="humburger"
+                                id="hamburger"
+                                class="relative -mr-6 p-6 lg:hidden"
+                            >
+                                <div
+                                    aria-hidden="true"
+                                    id="line"
+                                    class="m-auto h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300"
+                                ></div>
+                                <div
+                                    aria-hidden="true"
+                                    id="line2"
+                                    class="m-auto mt-2 h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300"
+                                ></div>
                             </button>
                         </div>
-                        <div aria-hidden="true" id="layer" class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition duration-500 dark:bg-darker/70 lg:hidden"></div>
-                        <div id="navlinks" class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-auto lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none dark:lg:bg-transparent">
-                            <div class="text-gray-600 dark:text-gray-300 lg:pr-4">
-                                <ul class="space-y-6 font-medium tracking-wide lg:flex lg:space-y-0">
+                        <div
+                            aria-hidden="true"
+                            id="layer"
+                            class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition duration-500 dark:bg-darker/70 lg:hidden"
+                        ></div>
+                        <div
+                            id="navlinks"
+                            class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-auto lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none dark:lg:bg-transparent"
+                        >
+                            <div
+                                class="text-gray-600 dark:text-gray-300 lg:pr-4"
+                            >
+                                <ul
+                                    class="space-y-6 font-medium tracking-wide lg:flex lg:space-y-0"
+                                >
                                     <li>
-                                        <a href="#product" class="nav-link block transition hover:text-primary dark:hover:text-primaryLight lg:px-4">
+                                        <a
+                                            href="#product"
+                                            class="nav-link block transition hover:text-primary dark:hover:text-primaryLight lg:px-4"
+                                        >
                                             <span>Product</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#pricing" class="nav-link block transition hover:text-primary dark:hover:text-primaryLight lg:px-4">
+                                        <a
+                                            href="#pricing"
+                                            class="nav-link block transition hover:text-primary dark:hover:text-primaryLight lg:px-4"
+                                        >
                                             <span>Pricing</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#company" class="nav-link block transition hover:text-primary dark:hover:text-primaryLight lg:px-4">
+                                        <a
+                                            href="#company"
+                                            class="nav-link block transition hover:text-primary dark:hover:text-primaryLight lg:px-4"
+                                        >
                                             <span>About</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#faqs" class="nav-link block transition hover:text-primary dark:hover:text-primaryLight lg:px-4">
+                                        <a
+                                            href="#faqs"
+                                            class="nav-link block transition hover:text-primary dark:hover:text-primaryLight lg:px-4"
+                                        >
                                             <span>Contact</span>
                                         </a>
                                     </li>
                                 </ul>
                             </div>
 
-                            <div class="mt-12 -ml-1 flex w-full flex-col space-y-2 border-primary/10 dark:border-gray-700 sm:flex-row md:w-max lg:mt-0 lg:mr-6 lg:space-y-0 lg:border-l lg:pl-6">
-                                <a href="https://app.chatrlyst.com" class="relative ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-primaryLight sm:px-4 lg:before:border lg:before:border-gray-200 lg:before:bg-gray-100 lg:dark:before:bg-gray-800">
-                                    <span class="relative font-medium text-white dark:text-gray-900 lg:text-primary lg:dark:text-white">Log in</span>
+                            <div
+                                class="mt-12 -ml-1 flex w-full flex-col space-y-2 border-primary/10 dark:border-gray-700 sm:flex-row md:w-max lg:mt-0 lg:mr-6 lg:space-y-0 lg:border-l lg:pl-6"
+                            >
+                                <a
+                                    href="https://app.chatrlyst.com"
+                                    class="relative ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-primaryLight sm:px-4 lg:before:border lg:before:border-gray-200 lg:before:bg-gray-100 lg:dark:before:bg-gray-800"
+                                >
+                                    <span
+                                        class="relative font-medium text-white dark:text-gray-900 lg:text-primary lg:dark:text-white"
+                                        >Log in</span
+                                    >
                                 </a>
                             </div>
-                            <button aria-label="switch theme" class="switcher group relative hidden h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 lg:flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="transistion relative m-auto hidden h-5 w-5 fill-gray-500 duration-300 group-hover:rotate-180 group-hover:fill-yellow-400 dark:block dark:fill-gray-300" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+                            <button
+                                aria-label="switch theme"
+                                class="switcher group relative hidden h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 lg:flex"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="transistion relative m-auto hidden h-5 w-5 fill-gray-500 duration-300 group-hover:rotate-180 group-hover:fill-yellow-400 dark:block dark:fill-gray-300"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                        clip-rule="evenodd"
+                                    ></path>
                                 </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="transistion relative m-auto h-5 w-5 fill-gray-500 duration-300 group-hover:-rotate-90 group-hover:fill-blue-900 dark:hidden" viewBox="0 0 20 20" fill="currentColor">
-                                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="transistion relative m-auto h-5 w-5 fill-gray-500 duration-300 group-hover:-rotate-90 group-hover:fill-blue-900 dark:hidden"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                                    ></path>
                                 </svg>
                             </button>
                         </div>
-                        <div class="fixed top-3 right-14 z-20 sm:right-24 lg:hidden">
-                            <button aria-label="switche theme" class="switcher group relative flex h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="transistion relative m-auto hidden h-5 w-5 fill-gray-500 duration-300 group-hover:rotate-180 group-hover:fill-yellow-400 dark:block dark:fill-gray-300" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+                        <div
+                            class="fixed top-3 right-14 z-20 sm:right-24 lg:hidden"
+                        >
+                            <button
+                                aria-label="switche theme"
+                                class="switcher group relative flex h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="transistion relative m-auto hidden h-5 w-5 fill-gray-500 duration-300 group-hover:rotate-180 group-hover:fill-yellow-400 dark:block dark:fill-gray-300"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                        clip-rule="evenodd"
+                                    ></path>
                                 </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="transistion relative m-auto h-5 w-5 fill-gray-500 duration-300 group-hover:-rotate-90 group-hover:fill-blue-900 dark:hidden" viewBox="0 0 20 20" fill="currentColor">
-                                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="transistion relative m-auto h-5 w-5 fill-gray-500 duration-300 group-hover:-rotate-90 group-hover:fill-blue-900 dark:hidden"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                                    ></path>
                                 </svg>
                             </button>
                         </div>
@@ -78,63 +182,168 @@
         <section id="home" class="pt-32 sm:pt-40 md:pt-48">
             <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                 <div class="relative">
-                    <h1 class="text-center text-4xl font-semibold text-slate-700 dark:text-white sm:text-5xl md:w-2/3 lg:text-left lg:text-6xl">
-                        <span class="relative bg-gradient-to-l from-primary to-secondaryLight bg-clip-text text-transparent dark:from-primaryLight dark:to-secondaryLight">Grow</span>
+                    <h1
+                        class="text-center text-4xl font-semibold text-slate-700 dark:text-white sm:text-5xl md:w-2/3 lg:text-left lg:text-6xl"
+                    >
+                        <span
+                            class="relative bg-gradient-to-l from-primary to-secondaryLight bg-clip-text text-transparent dark:from-primaryLight dark:to-secondaryLight"
+                            >Grow</span
+                        >
                         your audience by elevating your
                         <span class="relative">
-                            <svg class="absolute inset-x-0 -bottom-1 w-full opacity-50" xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 260 15.6">
+                            <svg
+                                class="absolute inset-x-0 -bottom-1 w-full opacity-50"
+                                xmlns="http://www.w3.org/2000/svg"
+                                id="Layer_1"
+                                viewBox="0 0 260 15.6"
+                            >
                                 <style>
                                     .st0 {
                                         @apply fill-secondaryLight;
                                     }
                                 </style>
-                                <path class="st0" d="M206.8 7.3l-.1.3c.1-.2.2-.3.1-.3zM234.7 10h-.1c-.2.4-.1.3.1 0zM54.8 4.2l-.6-.4c.2.4.4.5.6.4zM17.1 5.1zM34.5 9.6l.1.3c0-.2 0-.3-.1-.3zM22.4 10.8c-.3-.1-.7-.1-1-.1.2.1.7.1 1 .1zM17.5 5c-.1.1-.2.1-.4.2.2-.1.3-.2.4-.2zM52.7 9.8l.5.9c-.1-.3-.3-.6-.5-.9zM19.5 11.6c-.2-.2-.4-.2-.6-.3 0 .2.3.3.6.3zM120.9 11.4c-.1.1-.2.2-.2.3.3-.1.3-.2.2-.3zM80.9 10.4h-.1s.1.1.2.1l-.1-.1zM92.6 10.4l-.2.2c.2-.1.2-.1.2-.2zM72.1 11.3c-.1.1-.3.2-.4.3l.4-.3z" />
+                                <path
+                                    class="st0"
+                                    d="M206.8 7.3l-.1.3c.1-.2.2-.3.1-.3zM234.7 10h-.1c-.2.4-.1.3.1 0zM54.8 4.2l-.6-.4c.2.4.4.5.6.4zM17.1 5.1zM34.5 9.6l.1.3c0-.2 0-.3-.1-.3zM22.4 10.8c-.3-.1-.7-.1-1-.1.2.1.7.1 1 .1zM17.5 5c-.1.1-.2.1-.4.2.2-.1.3-.2.4-.2zM52.7 9.8l.5.9c-.1-.3-.3-.6-.5-.9zM19.5 11.6c-.2-.2-.4-.2-.6-.3 0 .2.3.3.6.3zM120.9 11.4c-.1.1-.2.2-.2.3.3-.1.3-.2.2-.3zM80.9 10.4h-.1s.1.1.2.1l-.1-.1zM92.6 10.4l-.2.2c.2-.1.2-.1.2-.2zM72.1 11.3c-.1.1-.3.2-.4.3l.4-.3z"
+                                />
                                 <path
                                     class="st0"
                                     d="M260 6c-1-.6-4.7-1.2-5.8.3-.2-.1.1-.3.2-.4-.9.2-2.2.1-3.6 0s-2.9-.2-4.2 0c-1 1.5-3.9-.6-4.8 1.4l.5-.4c.9.5-1.2 1.4-1.5 1.9-.8-1.2-.1-1-1-2l1.1.4-.3-1c-3.1 2.8-6.2-.9-8.2 1.1.1-.1.1-.3.2-.4-1.4-.5-2.3.8-3.3 1.2-.1-.5.6-.9 1.1-1.3-2.4-.3-6.4 1.2-9 .4-.9.7.4.9-.6 1.5-.8-.2-1.4-.7-.4-1.1-2.3-1.2-7.6 1-11.1-.2-1.8.8-.7 1.1-3.5 1.6.7-.5-.7-1.7 1-1.7l.2-.5c-2.8-.1-6.6-.3-8.1 1.2-.1-1.1-.5-.2-1.6-.8-.4.1 0 .2.2.2-1 .9-1.6-.1-2.3.1l.3-.2-2 .7c-.3-.2-.8-.4-.9-.7v.8c-1.1 0-.5-1-1.9-.8l.3.6c-.9-.4-2.2.4-2.4-.5 0-.2.1-.1.4-.1-1.3-1.2-3.5.3-5.1-.3l.4 1.3c-1.6.4-1-.3-.9-.7-1.1 0-1.3-.4-2.7-.6-.7.3-.4.5-.6.8l-1.5-.4 1-.7c-2.3 1.8-5.6-.4-7.2 1.2-.8-.4.8-.7.3-1-2.6-.9-6 1-8.2 0-3.6-1-7.8-.4-11.8-1.1l.1.3-2.9-.4c-.8.7-2.7.3-4 1.1.1-.3-.1-.7.2-.9-1.2.1-2.6.4-3.3-.1l.4-.3c-2.7-.3-6.4-.5-7.9.1-.9 0-.9-.6-1.1-1-1.6-.1-2.6.2-3.9.7-.3-.2-.7-.3-1-.6l-.6.8c-.6-.1-.1-.7-.6-.9-2.5.9-5.3-.1-7-.1l.2.4c-.7.3-2.1-.3-1.2-.7-3.4-.6-5.1 1.2-9.6.8-.6-1.5-4.1.3-4.8-1.4-1.9.4-3.2-.3-4.5.6 0-.2-.2-.2.1-.3-.8-.6-3.3-.2-5.3.2l-.1-.5c-.9 1.2-4.2.9-4.9 2-.2-.2.4-.5.7-.7-1-1.1-1.8.5-3.1.2.1-.3-.3-.6 0-.8-4.4-1.2-10.6.7-16.3-.1-1.6 0 .6 1.2-1.5 1.1-.6-.6 1-1.1-.3-1.4-.9.7-1.3.5-2.6.5.2-.4 0-.6.9-.9-.7-.5-3.1.9-4.5 0 .1.3-.2.5-.5.7-2.1 1-4.9-.9-5.1-.4 0 0-.7.2-.1.3-.8 0-1.9-.2-1.7-.7-.4.3-.8.8-1.4.8l.3-.6c-.4.1-.8.5-1.1.6l.6.4c-.9-.5-2.6.8-2.6-.4h.3l-1.7-.5c-.7.5-1.3 1-2.5.9-.5-1.3-2.9-.2-4.3-.3l.1-.4c-1.1.6-4 .4-3.5.6-1.1 0-2.6-.2-2-.6-.8.1-2.7.1-3.2.9l-1.8-1c-1 1.6-3.6-.5-3.6 1.2-1-.2-.8-.6-1.5-.9-1.4.9-2.8.8-4.2.7v-.2c-1.4-.1-3.1.8-5.1 1l-.5-1.2c-1 .2-1.3 1.2-2.3 1-.2-.2 0-.3.2-.3-1 .3-2.3.1-3.1-.2-1.5 1-2.7.7-3.9 1.8-1.3-1 1.7-.6.6-1.6-2.2-.4-4.4.4-6.7 1.1-.2-.2 0-.4.1-.7 0 0-1.2.9-2.2 1.8C.9 8.3 0 9.4.5 10c-.5.9-1.2 1.4.9 2 .6-.5 2.5-1.3 2.9-.4l.1-.9c2.6-.6.4 1.8 3.6 1.6l-.7-.3c.6-.1 1.1-.7 1.8-.5.2.2-.2.4-.5.6.9-.5 1.7-.9 2.6-1.4.1.5.1.8-.4 1.2 2.5-.2-.6-1.6 2.4-1.4.6.4-.2.6-.5.9 1.4.7 2.3-.1 3.8-.6.1.8-.9.7.3 1.2-.3-.4-.5-1.1.5-1.2-.4.8.7.4 1.6.5-.2-.3-.1-.6.2-.8.4-.1.8.1 1.4.1l-1.1-.7c1.5-.8 2.4.3 3.6.6-.1.1-.3.3-.5.3 1.2.3 2.5.9 4.1.1l-.3.1c2.9-.9-1-1.3 2.4-2.2 1.1.1-.4 2.6 2.1 1.6-1.3-.6 1.6-1.7 3.1-2L32.4 10c.6 0 1.6-.5 2-.3l-.1-.3c-.2-1.3 1.9.1 3-.7-1.3 1.8-1.4 1.5-1.6 3.2 1-1 2.2-1.9 4.1-1.8l-1.5 1.4c2.5.2 5.5-1.9 7.6-3-.5 1 .3 1.4-.6 2.2l2.4-.3-.7 1.1c1-1.2 2.1-.4 1.9-1.9-.3.2-.2.4-.7.3.1-.4.5-1.4 1.7-1.3.9.3-.5.6-.2 1 .8-.6.9.3 1.7-.1l-.8-.6c.6-.9 1.4-.1 2.2-.5-1 .4-.7.9-.3 1.4l-.1-.1c.8-.1 1.6-.7 2-.2l-.5 1.2.9-.9c.3.1.6.6 0 .8 2.8.7-.1-2.5 3.6-1.5 0 .5-.4.8-1.4.5-.2.7.1 1.1 1.1 1.4v.1c1.9 0 4.4 0 5.6-.8.4.3 0 .6-.4.9 2.1.4 2.8-.7 5 .1l-1-.4c1.4-.6 4-.8 5.3.1l-.4.3c1.3-.7 3.5.6 4 0-.6-.4 0-.6-.8-1l3.4-.7.2 1.2 1.8-.4c-.4-.5 2.4.4 2.5-.7 1 .4-.4.9-.8 1.4 1-.3 1.1.2 2.1-.5l1 1.1 2.6-.7c-.1.1 0 .2-.1.3 1.2-.9 3.1.6 4.6-.9-.1.1-.1.1-.1.2.9-.8 2.9-.2 3.7 0 1.4-.2.6-1 .6-1.4 3.9.4 2.7.3 6-.9 2 1.4-2.4 2.1.1 3 .4-.6 2.1-1.1 4.1-1.3 1.8.5 4.8.9 6.5 1.9l-.2-.9 2.6-.4-1.5 1.2c.4-.3 1.7-.8 2.6-1.2 2.7-.7 1.4 1.9 3.5.7.1.1.1.2.2.3.7-.6 2.4-.3 4.4-.5l-.7 1.1-1.3-.3c.7 1.1 2.1-.1 3.4 0 1.3-.3.7-1.3 1.4-1.6.5.1 1.2-.2 1.6.1 1.1.4.1 1.3-.3 1.8 1-1.1 1.4-.9 3.6-1.3.1.5-.1.8-.4.9.5-.1.9-.3 1.2-.8l.7.7c2.5 1 2.6-2 5.6-1.5-.8.6 2.6 0 3.5.7-1.1.1.4 1.6-.2 2.3 2.4.5 1-1.3 3-1.4l-.9 1.3c1.9-.5.5-.7 2.4-1.1-.5.4.8.4-.3.8 2.5.2 1.9.1 4.1.3l.2-1.3c.7-.1 1 .5 1.2.7-.3 0-.8-.1-.7.1.8 1.2 1.4-.6 2.4.5-.2-.4-.5-1 .4-1.1-.3.8 1.4.8 1.4 1.2-.6-.6 2-.2 2.1-1 1 .7-.4.6-.4 1.1.9-1 3.7 0 4.6-.6 0 .1.1.1.1.2 1.2-.6 3-.7 5.3-1.5l-.8.7c2.2.4 1.4-1.5 3.3-1.5-.4 1.1 3.1 0 2.2 1.2 1.1-.6 2.3-.8 3.1-1.7 1 .6-2.1 1.4-.6 1.8l1.6-.5.3.6c.1-.4 1.5-.4 1.4-.8.2.7.9 1.2.8 1.8 1-.2 2.4.5 3.3-.1l.1.3c1-1.3 3.1-.2 3.6-1.5l.6.7c1.5-.1 1.3-1.5 2-1.8.6 0 1.4-.2 2 0-2 .8 1 1.1 1.4 1.6.8 0 3.1 0 3.7-.7-1 .7-.4 1.2-2.1 1.3.9 1.3 2.6-.2 4.5-.1v.6c2.7-.4 2.8-1.5 4-2.5.3.8.1 1-.7 1.7 1.8.5 4.7-.1 6.7 0 .6.5.2.9-.5 1.1 2.1-.6 4.7.1 6-1.2-.5.5.9.3 1.6.6 0-.3.1-.6.2-.6 1.3-.6 4.1-1.1 5.6-.7l-.5.4c1.7.1 3-.5 4.3-.9 1.3-.4 2.6-.8 4.5-.4.7.3-.7 1.1.7 1 .7-.5.4-1.5 2.2-1.3l-.1.9 1.2-.9c-.7-.7-2.6-.4-1.3-1.2 1.6.8 1.3-.9 3.3 0-.4.1-1 .8-1.3 1.2 2 .4 3.4.1 4.8-.1 1.4-.3 2.8-.6 4.9-.2 2-.8 4.6-1.2 5.9-1.9 0 .9 0 1.7-.8 2.4 1.8 0 2.4-2.1 3.7-.9.7-1.3 4.7-1.2 5-3l2-.8z"
                                 />
-                                <path class="st0" d="M58.1 11.1c-1 0-1.9 0-2.3.2.2.2 2.3.6 2.3-.2zM208.2 13.3c-.1 0-.3.1-.4.1.1 0 .3 0 .4-.1zM216.3 12.9c-.1-.1-.2-.2-.4-.3 0 .3.1.5.4.3zM132.6 11.5zM178.5 13.7c.7-.4 1-.7 1-1-.4.1-.7.3-1 1zM163 12.6c-.1.1-.2.1-.3.2.3-.1.3-.2.3-.2zM130.2 12c.7-.4 1.6-.3 2.4-.5-.7.2-1.9-.3-2.4.5zM226.1 11.4l-.7.6.8-.4zM218.6 12c-.3-.1-1.7.3-1.3.6.4-.3.9-.5 1.3-.6zM189.6 11.4l-.3.6.7-.5z" />
+                                <path
+                                    class="st0"
+                                    d="M58.1 11.1c-1 0-1.9 0-2.3.2.2.2 2.3.6 2.3-.2zM208.2 13.3c-.1 0-.3.1-.4.1.1 0 .3 0 .4-.1zM216.3 12.9c-.1-.1-.2-.2-.4-.3 0 .3.1.5.4.3zM132.6 11.5zM178.5 13.7c.7-.4 1-.7 1-1-.4.1-.7.3-1 1zM163 12.6c-.1.1-.2.1-.3.2.3-.1.3-.2.3-.2zM130.2 12c.7-.4 1.6-.3 2.4-.5-.7.2-1.9-.3-2.4.5zM226.1 11.4l-.7.6.8-.4zM218.6 12c-.3-.1-1.7.3-1.3.6.4-.3.9-.5 1.3-.6zM189.6 11.4l-.3.6.7-.5z"
+                                />
                             </svg>
-                            <span class="relative bg-gradient-to-r from-primary to-secondaryLight bg-clip-text text-transparent dark:from-primaryLight dark:to-secondaryLight">content</span>.
+                            <span
+                                class="relative bg-gradient-to-r from-primary to-secondaryLight bg-clip-text text-transparent dark:from-primaryLight dark:to-secondaryLight"
+                                >content</span
+                            >.
                         </span>
                     </h1>
 
                     <div class="relative items-center gap-12 lg:flex">
-                        <div class="text-center sm:mx-auto sm:w-11/12 md:mt-12 md:w-4/5 lg:mt-0 lg:mr-auto lg:w-6/12 lg:text-left">
-                            <p class="mt-12 text-lg text-gray-600 dark:text-gray-300 sm:text-xl"><span class="text-primary">AI-Driven</span> analytics for your comment section. Unleash your content potential with a couple of clicks.</p>
+                        <div
+                            class="text-center sm:mx-auto sm:w-11/12 md:mt-12 md:w-4/5 lg:mt-0 lg:mr-auto lg:w-6/12 lg:text-left"
+                        >
+                            <p
+                                class="mt-12 text-lg text-gray-600 dark:text-gray-300 sm:text-xl"
+                            >
+                                <span class="text-primary">AI-Driven</span>
+                                analytics for your comment section. Unleash your
+                                content potential with a couple of clicks.
+                            </p>
                             <form action="" class="mt-12">
-                                <div class="relative flex items-center rounded-full border border-primary/20 bg-white p-1 px-2 shadow-md focus-within:ring-2 dark:border-white/10 dark:bg-dark md:p-2 lg:pr-3">
+                                <div
+                                    class="relative flex items-center rounded-full border border-primary/20 bg-white p-1 px-2 shadow-md focus-within:ring-2 dark:border-white/10 dark:bg-dark md:p-2 lg:pr-3"
+                                >
                                     <div class="py-3 pl-4 lg:pl-5">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="m-auto h-6 w-6 fill-gray-500 dark:fill-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="m-auto h-6 w-6 fill-gray-500 dark:fill-gray-400"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                        >
+                                            <path
+                                                d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                                            />
+                                            <path
+                                                d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                                            />
                                         </svg>
                                     </div>
-                                    <input aria-label="your email" autocomplete="email" placeholder="Your mail address" class="w-full rounded-full bg-transparent p-4 placeholder-gray-600 outline-none dark:text-white dark:placeholder-white" type="email" />
+                                    <input
+                                        aria-label="your email"
+                                        autocomplete="email"
+                                        placeholder="Your mail address"
+                                        class="w-full rounded-full bg-transparent p-4 placeholder-gray-600 outline-none dark:text-white dark:placeholder-white"
+                                        type="email"
+                                    />
                                     <div class="md:pr-1.5 lg:pr-0">
-                                        <button type="button" title="Start buying" class="relative ml-auto h-12 w-16 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 active:duration-75 active:before:scale-95 dark:before:bg-primaryLight sm:w-auto sm:px-6">
-                                            <span class="relative hidden w-max font-semibold text-white dark:text-gray-900 md:block"> Get Started </span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="relative mx-auto h-6 w-6 text-white dark:text-gray-900 md:hidden">
-                                                <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+                                        <button
+                                            type="button"
+                                            title="Start buying"
+                                            class="relative ml-auto h-12 w-16 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 active:duration-75 active:before:scale-95 dark:before:bg-primaryLight sm:w-auto sm:px-6"
+                                        >
+                                            <span
+                                                class="relative hidden w-max font-semibold text-white dark:text-gray-900 md:block"
+                                            >
+                                                Get Started
+                                            </span>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                fill="currentColor"
+                                                class="relative mx-auto h-6 w-6 text-white dark:text-gray-900 md:hidden"
+                                            >
+                                                <path
+                                                    d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
+                                                />
                                             </svg>
                                         </button>
                                     </div>
                                 </div>
                             </form>
                         </div>
-                        <div class="mt-12 w-full overflow-hidden sm:mt-20 lg:-mt-8 lg:w-6/12">
-                            <img class="w-full" src="./images/team.svg" class="w-full" alt="project illustration" height="600" width="800" />
+                        <div
+                            class="mt-12 w-full overflow-hidden sm:mt-20 lg:-mt-8 lg:w-6/12"
+                        >
+                            <img
+                                class="w-full"
+                                src="./images/sentiment_theme.png"
+                                alt="project illustration"
+                            />
                         </div>
                     </div>
                     <div class="mt-12 text-center">
-                        <span class="text-sm font-semibold tracking-wider dark:text-white">TRUSTED BY YOUR FAVOURITE CREATORS</span>
+                        <span
+                            class="text-sm font-semibold tracking-wider dark:text-white"
+                            >TRUSTED BY YOUR FAVOURITE CREATORS</span
+                        >
 
-                        <div class="mt-8 flex flex-wrap justify-center gap-6 brightness-75 contrast-200 grayscale dark:brightness-200 dark:contrast-0 lg:gap-24">
-                            <img class="h-8 w-auto lg:h-10 lg:w-auto" src="./../images/clients/airbnb.svg" loading="lazy" alt="airbnb" width="" height="" />
-                            <img class="h-8 w-auto lg:h-10 lg:w-auto" src="./../images/clients/coty.svg" loading="lazy" alt="coty" width="" height="" />
-                            <img class="h-8 w-auto lg:h-10 lg:w-auto" src="./../images/clients/ge.svg" loading="lazy" alt="ge" width="" height="" />
-                            <img class="h-8 w-auto lg:h-10 lg:w-auto" src="./../images/clients/lilly.png" loading="lazy" alt="lilly" width="" height="" />
-                            <img class="h-8 w-auto lg:h-10 lg:w-auto" src="./../images/clients/microsoft.svg" loading="lazy" alt="microsoft" width="" height="" />
+                        <div
+                            class="mt-8 flex flex-wrap justify-center gap-6 brightness-75 contrast-200 grayscale dark:brightness-200 dark:contrast-0 lg:gap-24"
+                        >
+                            <img
+                                class="h-8 w-auto lg:h-10 lg:w-auto"
+                                src="./../images/clients/airbnb.svg"
+                                loading="lazy"
+                                alt="airbnb"
+                                width=""
+                                height=""
+                            />
+                            <img
+                                class="h-8 w-auto lg:h-10 lg:w-auto"
+                                src="./../images/clients/coty.svg"
+                                loading="lazy"
+                                alt="coty"
+                                width=""
+                                height=""
+                            />
+                            <img
+                                class="h-8 w-auto lg:h-10 lg:w-auto"
+                                src="./../images/clients/ge.svg"
+                                loading="lazy"
+                                alt="ge"
+                                width=""
+                                height=""
+                            />
+                            <img
+                                class="h-8 w-auto lg:h-10 lg:w-auto"
+                                src="./../images/clients/lilly.png"
+                                loading="lazy"
+                                alt="lilly"
+                                width=""
+                                height=""
+                            />
+                            <img
+                                class="h-8 w-auto lg:h-10 lg:w-auto"
+                                src="./../images/clients/microsoft.svg"
+                                loading="lazy"
+                                alt="microsoft"
+                                width=""
+                                height=""
+                            />
                         </div>
                     </div>
                 </div>
@@ -144,121 +353,382 @@
         <section id="product" class="pt-32">
             <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                 <div class="text-center">
-                    <h2 class="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl xl:text-5xl">
+                    <h2
+                        class="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl xl:text-5xl"
+                    >
                         Unleash your content potential with
                         <div class="mt-2 text-primary">AI-Driven insights</div>
                     </h2>
-                    <p class="mx-auto mt-6 text-gray-700 dark:text-gray-300 md:w-3/4 lg:w-3/5">Being a content creator is tough. Chatrlyst helps you create content that truely resonates. Driving enagement, fostering channel growth and increasing monetisation opportunities.</p>
+                    <p
+                        class="mx-auto mt-6 text-gray-700 dark:text-gray-300 md:w-3/4 lg:w-3/5"
+                    >
+                        Being a content creator is tough. Chatrlyst helps you
+                        create content that truely resonates. Driving enagement,
+                        fostering channel growth and increasing monetisation
+                        opportunities.
+                    </p>
 
-                    <div role="tablist" aria-label="tabs" class="relative mx-auto mt-12 grid h-12 w-auto grid-cols-3 items-center gap-x-1 overflow-hidden rounded-full border border-gray-200 bg-gray-100 px-[3px] text-gray-600 dark:border-gray-700 dark:border-opacity-60 dark:bg-darker dark:text-gray-300 dark:shadow-none sm:w-max">
-                        <div class="tab-indicator absolute h-10 rounded-full bg-white shadow-md transition-[left] duration-500 dark:bg-gray-800" style="left: 4px"></div>
-                        <button role="tab" aria-selected="true" aria-controls="panel-0" tabindex="0" title="tab item" class="tab relative block rounded-full py-2.5 px-4 hover:text-primary dark:hover:text-primaryLight">
-                            <span class="m-auto block w-max text-sm font-medium tracking-wider">Themes</span>
+                    <div
+                        role="tablist"
+                        aria-label="tabs"
+                        class="relative mx-auto mt-12 grid h-12 w-auto grid-cols-3 items-center gap-x-1 overflow-hidden rounded-full border border-gray-200 bg-gray-100 px-[3px] text-gray-600 dark:border-gray-700 dark:border-opacity-60 dark:bg-darker dark:text-gray-300 dark:shadow-none sm:w-max"
+                    >
+                        <div
+                            class="tab-indicator absolute h-10 rounded-full bg-white shadow-md transition-[left] duration-500 dark:bg-gray-800"
+                            style="left: 4px"
+                        ></div>
+                        <button
+                            role="tab"
+                            aria-selected="true"
+                            aria-controls="panel-0"
+                            tabindex="0"
+                            title="tab item"
+                            class="tab relative block rounded-full py-2.5 px-4 hover:text-primary dark:hover:text-primaryLight"
+                        >
+                            <span
+                                class="m-auto block w-max text-sm font-medium tracking-wider"
+                                >Themes</span
+                            >
                         </button>
-                        <button role="tab" aria-selected="false" aria-controls="panel-1" tabindex="-1" title="tab item" class="tab relative block rounded-full py-2.5 px-4 hover:text-primary dark:hover:text-primaryLight">
-                            <span class="m-auto block w-max text-sm font-medium tracking-wider">Feedback</span>
+                        <button
+                            role="tab"
+                            aria-selected="false"
+                            aria-controls="panel-1"
+                            tabindex="-1"
+                            title="tab item"
+                            class="tab relative block rounded-full py-2.5 px-4 hover:text-primary dark:hover:text-primaryLight"
+                        >
+                            <span
+                                class="m-auto block w-max text-sm font-medium tracking-wider"
+                                >Feedback</span
+                            >
                         </button>
-                        <button role="tab" aria-selected="false" aria-controls="panel-2" tabindex="-1" title="tab item" class="tab relative block rounded-full py-2.5 px-4 hover:text-primary dark:hover:text-primaryLight">
-                            <span class="m-auto block w-max text-sm font-medium tracking-wider">Video Ideas</span>
+                        <button
+                            role="tab"
+                            aria-selected="false"
+                            aria-controls="panel-2"
+                            tabindex="-1"
+                            title="tab item"
+                            class="tab relative block rounded-full py-2.5 px-4 hover:text-primary dark:hover:text-primaryLight"
+                        >
+                            <span
+                                class="m-auto block w-max text-sm font-medium tracking-wider"
+                                >Video Ideas</span
+                            >
                         </button>
                     </div>
                 </div>
                 <div class="mt-20">
                     <div class="gap-6 space-y-12 md:flex md:space-y-0">
                         <div class="relative md:w-1/2">
-                            <div class="panel visible inset-0 flex scale-100 flex-col justify-center opacity-100 transition duration-500 md:absolute" id="panel-0">
+                            <div
+                                class="panel visible inset-0 flex scale-100 flex-col justify-center opacity-100 transition duration-500 md:absolute"
+                                id="panel-0"
+                            >
                                 <div>
-                                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white md:text-3xl">Discover the Heart of Your Content</h3>
-                                    <p class="mt-8 text-gray-600 dark:text-gray-300">Chatrlyst's theme analysis uncovers the underlying themes resonating with your audience. We help you identify recurring topics, trends, and discussions within your comments. This means you can stay on top of the subjects that truly matter to your viewers, allowing you to create content that remains relevant and in-demand.</p>
+                                    <h3
+                                        class="text-2xl font-bold text-gray-900 dark:text-white md:text-3xl"
+                                    >
+                                        Discover the Heart of Your Content
+                                    </h3>
+                                    <p
+                                        class="mt-8 text-gray-600 dark:text-gray-300"
+                                    >
+                                        Chatrlyst's theme analysis uncovers the
+                                        underlying themes resonating with your
+                                        audience. We help you identify recurring
+                                        topics, trends, and discussions within
+                                        your comments. This means you can stay
+                                        on top of the subjects that truly matter
+                                        to your viewers, allowing you to create
+                                        content that remains relevant and
+                                        in-demand.
+                                    </p>
                                     <div class="mt-12 space-y-6">
                                         <div class="flex items-center gap-6">
-                                            <div class="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40">
-                                                <img class="m-auto h-10 w-auto" src="https://cdn-icons-png.flaticon.com/512/9850/9850903.png" alt="icon illustration" loading="lazy" width="512" height="512" />
+                                            <div
+                                                class="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40"
+                                            >
+                                                <img
+                                                    class="m-auto h-10 w-auto"
+                                                    src="https://cdn-icons-png.flaticon.com/512/9850/9850903.png"
+                                                    alt="icon illustration"
+                                                    loading="lazy"
+                                                    width="512"
+                                                    height="512"
+                                                />
                                             </div>
                                             <div class="w-[calc(100%-7.5rem)]">
-                                                <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Sentiment Analysis</h4>
-                                                <p class="mt-1 text-gray-600 dark:text-gray-400">We go beyond just likes and dislikes, diving deep into the comments to help you grasp the emotion behind your content.</p>
+                                                <h4
+                                                    class="text-lg font-semibold text-gray-800 dark:text-white"
+                                                >
+                                                    Sentiment Analysis
+                                                </h4>
+                                                <p
+                                                    class="mt-1 text-gray-600 dark:text-gray-400"
+                                                >
+                                                    We go beyond just likes and
+                                                    dislikes, diving deep into
+                                                    the comments to help you
+                                                    grasp the emotion behind
+                                                    your content.
+                                                </p>
                                             </div>
                                         </div>
 
                                         <div class="flex items-center gap-6">
-                                            <div class="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40">
-                                                <img class="m-auto h-10 w-auto" src="https://cdn-icons-png.flaticon.com/512/1599/1599828.png" alt="icon illustration" loading="lazy" width="512" height="512" />
+                                            <div
+                                                class="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40"
+                                            >
+                                                <img
+                                                    class="m-auto h-10 w-auto"
+                                                    src="https://cdn-icons-png.flaticon.com/512/1599/1599828.png"
+                                                    alt="icon illustration"
+                                                    loading="lazy"
+                                                    width="512"
+                                                    height="512"
+                                                />
                                             </div>
                                             <div class="w-[calc(100%-7.5rem)]">
-                                                <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Competitive Edge</h4>
-                                                <p class="mt-1 text-gray-600 dark:text-gray-400">Stay ahead of the competition! Gain a competitive edge by understanding your audience like never before.</p>
+                                                <h4
+                                                    class="text-lg font-semibold text-gray-800 dark:text-white"
+                                                >
+                                                    Competitive Edge
+                                                </h4>
+                                                <p
+                                                    class="mt-1 text-gray-600 dark:text-gray-400"
+                                                >
+                                                    Stay ahead of the
+                                                    competition! Gain a
+                                                    competitive edge by
+                                                    understanding your audience
+                                                    like never before.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="panel invisible absolute inset-0 flex scale-90 flex-col justify-center opacity-0 transition duration-500" id="panel-1">
+                            <div
+                                class="panel invisible absolute inset-0 flex scale-90 flex-col justify-center opacity-0 transition duration-500"
+                                id="panel-1"
+                            >
                                 <div>
-                                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white md:text-3xl">Leverage Constructive Criticism</h3>
-                                    <p class="mt-8 text-gray-600 dark:text-gray-300">Chatrlyst's feedback analysis doesn't just tell you what's working; it reveals what needs improvement. We sift through your audience's constructive feedback and suggestions, empowering you to refine your content strategy. It's your pathway to continuous growth and content enhancement.</p>
+                                    <h3
+                                        class="text-2xl font-bold text-gray-900 dark:text-white md:text-3xl"
+                                    >
+                                        Leverage Constructive Criticism
+                                    </h3>
+                                    <p
+                                        class="mt-8 text-gray-600 dark:text-gray-300"
+                                    >
+                                        Chatrlyst's feedback analysis doesn't
+                                        just tell you what's working; it reveals
+                                        what needs improvement. We sift through
+                                        your audience's constructive feedback
+                                        and suggestions, empowering you to
+                                        refine your content strategy. It's your
+                                        pathway to continuous growth and content
+                                        enhancement.
+                                    </p>
                                     <div class="mt-12 space-y-6">
                                         <div class="flex items-center gap-6">
-                                            <div class="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40">
-                                                <img class="m-auto h-10 w-auto" src="https://cdn-icons-png.flaticon.com/512/3586/3586519.png" alt="icon illustration" loading="lazy" width="512" height="512" />
+                                            <div
+                                                class="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40"
+                                            >
+                                                <img
+                                                    class="m-auto h-10 w-auto"
+                                                    src="https://cdn-icons-png.flaticon.com/512/3586/3586519.png"
+                                                    alt="icon illustration"
+                                                    loading="lazy"
+                                                    width="512"
+                                                    height="512"
+                                                />
                                             </div>
                                             <div class="w-[calc(100%-7.5rem)]">
-                                                <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Customised Action Plans</h4>
-                                                <p class="mt-1 text-gray-600 dark:text-gray-400">Your personalised content guide! Chatrlyst tailors action plans and recommendations to your unique content goals and needs.</p>
+                                                <h4
+                                                    class="text-lg font-semibold text-gray-800 dark:text-white"
+                                                >
+                                                    Customised Action Plans
+                                                </h4>
+                                                <p
+                                                    class="mt-1 text-gray-600 dark:text-gray-400"
+                                                >
+                                                    Your personalised content
+                                                    guide! Chatrlyst tailors
+                                                    action plans and
+                                                    recommendations to your
+                                                    unique content goals and
+                                                    needs.
+                                                </p>
                                             </div>
                                         </div>
 
                                         <div class="flex items-center gap-6">
-                                            <div class="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40">
-                                                <img class="m-auto h-10 w-auto" src="https://cdn-icons-png.flaticon.com/512/2328/2328966.png" alt="icon illustration" loading="lazy" width="512" height="512" />
+                                            <div
+                                                class="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40"
+                                            >
+                                                <img
+                                                    class="m-auto h-10 w-auto"
+                                                    src="https://cdn-icons-png.flaticon.com/512/2328/2328966.png"
+                                                    alt="icon illustration"
+                                                    loading="lazy"
+                                                    width="512"
+                                                    height="512"
+                                                />
                                             </div>
                                             <div class="w-[calc(100%-7.5rem)]">
-                                                <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Data-Driven Decision-Making</h4>
-                                                <p class="mt-1 text-gray-600 dark:text-gray-400">Informed content strategies! Chatrlyst equips you with data-driven insights, so you can make well-informed content decisions.</p>
+                                                <h4
+                                                    class="text-lg font-semibold text-gray-800 dark:text-white"
+                                                >
+                                                    Data-Driven Decision-Making
+                                                </h4>
+                                                <p
+                                                    class="mt-1 text-gray-600 dark:text-gray-400"
+                                                >
+                                                    Informed content strategies!
+                                                    Chatrlyst equips you with
+                                                    data-driven insights, so you
+                                                    can make well-informed
+                                                    content decisions.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="panel invisible absolute inset-0 flex scale-90 flex-col justify-center opacity-0 transition duration-500" id="panel-2">
+                            <div
+                                class="panel invisible absolute inset-0 flex scale-90 flex-col justify-center opacity-0 transition duration-500"
+                                id="panel-2"
+                            >
                                 <div>
-                                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white md:text-3xl">Infinite Inspiration, Right from Your Audience</h3>
-                                    <p class="mt-8 text-gray-600 dark:text-gray-300">Chatrlyst doesn't stop at analysis; we generate fresh video ideas directly from your comment section. We understand the pulse of your audience and can provide suggestions for new content based on their input. Your viewers become your source of inspiration, ensuring your content remains aligned with their desires and expectations.</p>
+                                    <h3
+                                        class="text-2xl font-bold text-gray-900 dark:text-white md:text-3xl"
+                                    >
+                                        Infinite Inspiration, Right from Your
+                                        Audience
+                                    </h3>
+                                    <p
+                                        class="mt-8 text-gray-600 dark:text-gray-300"
+                                    >
+                                        Chatrlyst doesn't stop at analysis; we
+                                        generate fresh video ideas directly from
+                                        your comment section. We understand the
+                                        pulse of your audience and can provide
+                                        suggestions for new content based on
+                                        their input. Your viewers become your
+                                        source of inspiration, ensuring your
+                                        content remains aligned with their
+                                        desires and expectations.
+                                    </p>
                                     <div class="mt-12 space-y-6">
                                         <div class="flex items-center gap-6">
-                                            <div class="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40">
-                                                <img class="m-auto h-10 w-auto" src="https://cdn-icons-png.flaticon.com/512/3340/3340200.png" alt="icon illustration" loading="lazy" width="512" height="512" />
+                                            <div
+                                                class="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40"
+                                            >
+                                                <img
+                                                    class="m-auto h-10 w-auto"
+                                                    src="https://cdn-icons-png.flaticon.com/512/3340/3340200.png"
+                                                    alt="icon illustration"
+                                                    loading="lazy"
+                                                    width="512"
+                                                    height="512"
+                                                />
                                             </div>
                                             <div class="w-[calc(100%-7.5rem)]">
-                                                <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Audience Connection</h4>
-                                                <p class="mt-1 text-gray-600 dark:text-gray-400">Foster a loyal community! Chatrlyst deepens your audience connections, nurturing a loyal following and a sense of belonging.</p>
+                                                <h4
+                                                    class="text-lg font-semibold text-gray-800 dark:text-white"
+                                                >
+                                                    Audience Connection
+                                                </h4>
+                                                <p
+                                                    class="mt-1 text-gray-600 dark:text-gray-400"
+                                                >
+                                                    Foster a loyal community!
+                                                    Chatrlyst deepens your
+                                                    audience connections,
+                                                    nurturing a loyal following
+                                                    and a sense of belonging.
+                                                </p>
                                             </div>
                                         </div>
 
                                         <div class="flex items-center gap-6">
-                                            <div class="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40">
-                                                <img class="m-auto h-10 w-auto" src="https://cdn-icons-png.flaticon.com/512/2514/2514435.png" alt="icon illustration" loading="lazy" width="512" height="512" />
+                                            <div
+                                                class="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40"
+                                            >
+                                                <img
+                                                    class="m-auto h-10 w-auto"
+                                                    src="https://cdn-icons-png.flaticon.com/512/2514/2514435.png"
+                                                    alt="icon illustration"
+                                                    loading="lazy"
+                                                    width="512"
+                                                    height="512"
+                                                />
                                             </div>
                                             <div class="w-[calc(100%-7.5rem)]">
-                                                <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Grow Your Audience</h4>
-                                                <p class="mt-1 text-gray-600 dark:text-gray-400">Access insights that drive increased engagement and foster channel growth.</p>
+                                                <h4
+                                                    class="text-lg font-semibold text-gray-800 dark:text-white"
+                                                >
+                                                    Grow Your Audience
+                                                </h4>
+                                                <p
+                                                    class="mt-1 text-gray-600 dark:text-gray-400"
+                                                >
+                                                    Access insights that drive
+                                                    increased engagement and
+                                                    foster channel growth.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="-m-4 overflow-hidden p-4 sm:-mx-12 sm:px-12 md:mx-0 md:w-1/2 md:overflow-visible md:px-0">
-                            <div class="relative bg-gray-100 before:absolute before:inset-0 before:scale-x-110 before:border-y before:border-gray-200 after:absolute after:inset-0 after:scale-y-110 after:border-x after:border-gray-200 dark:bg-gray-800 dark:before:border-gray-700 dark:after:border-gray-700">
-                                <div class="relative h-96 overflow-clip py-10 sm:h-[32rem] lg:p-20">
-                                    <div data-target="panel-0" class="panel-preview absolute inset-0 z-10 flex translate-y-0 scale-100 items-end overflow-hidden px-6 opacity-100 transition duration-500 sm:px-10">
-                                        <img src="./images/screenshots/tailus-home.webp" class="mx-auto h-80 w-96 rounded-t-3xl border object-cover object-top shadow-2xl dark:border-transparent sm:h-[28rem]" alt="tailus screenshot" width="850" height="1780" />
+                        <div
+                            class="-m-4 overflow-hidden p-4 sm:-mx-12 sm:px-12 md:mx-0 md:w-1/2 md:overflow-visible md:px-0"
+                        >
+                            <div
+                                class="relative bg-gray-100 before:absolute before:inset-0 before:scale-x-110 before:border-y before:border-gray-200 after:absolute after:inset-0 after:scale-y-110 after:border-x after:border-gray-200 dark:bg-gray-800 dark:before:border-gray-700 dark:after:border-gray-700"
+                            >
+                                <div
+                                    class="relative h-96 overflow-clip py-10 sm:h-[32rem] lg:p-20"
+                                >
+                                    <div
+                                        data-target="panel-0"
+                                        class="panel-preview absolute inset-0 z-10 flex translate-y-0 scale-100 items-end overflow-hidden px-6 opacity-100 transition duration-500 sm:px-10"
+                                    >
+                                        <img
+                                            src="./images/screenshots/tailus-home.webp"
+                                            class="mx-auto h-80 w-96 rounded-t-3xl border object-cover object-top shadow-2xl dark:border-transparent sm:h-[28rem]"
+                                            alt="tailus screenshot"
+                                            width="850"
+                                            height="1780"
+                                        />
                                     </div>
-                                    <div data-target="panel-1" class="panel-preview absolute inset-0 z-0 flex translate-y-[100%] scale-100 items-end overflow-hidden px-6 opacity-50 transition duration-500 sm:px-10">
-                                        <img src="./images/screenshots/tailus-home-dark.webp" class="mx-auto h-80 w-96 rounded-t-3xl border object-cover object-top shadow-2xl dark:border-transparent sm:h-[28rem]" alt="tailus screenshot dark-mode" width="850" height="1780" />
+                                    <div
+                                        data-target="panel-1"
+                                        class="panel-preview absolute inset-0 z-0 flex translate-y-[100%] scale-100 items-end overflow-hidden px-6 opacity-50 transition duration-500 sm:px-10"
+                                    >
+                                        <img
+                                            src="./images/screenshots/tailus-home-dark.webp"
+                                            class="mx-auto h-80 w-96 rounded-t-3xl border object-cover object-top shadow-2xl dark:border-transparent sm:h-[28rem]"
+                                            alt="tailus screenshot dark-mode"
+                                            width="850"
+                                            height="1780"
+                                        />
                                     </div>
-                                    <div data-target="panel-2" class="panel-preview absolute inset-0 z-0 flex translate-y-[100%] scale-100 items-end overflow-hidden px-6 opacity-50 transition duration-500 sm:px-10">
-                                        <img src="./images/screenshots/tailus-contact.webp" class="mx-auto h-80 w-96 rounded-t-3xl border object-cover object-top shadow-2xl dark:border-transparent sm:h-[28rem]" alt="tailus contact screenshot" width="850" height="1780" />
+                                    <div
+                                        data-target="panel-2"
+                                        class="panel-preview absolute inset-0 z-0 flex translate-y-[100%] scale-100 items-end overflow-hidden px-6 opacity-50 transition duration-500 sm:px-10"
+                                    >
+                                        <img
+                                            src="./images/screenshots/tailus-contact.webp"
+                                            class="mx-auto h-80 w-96 rounded-t-3xl border object-cover object-top shadow-2xl dark:border-transparent sm:h-[28rem]"
+                                            alt="tailus contact screenshot"
+                                            width="850"
+                                            height="1780"
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -268,39 +738,108 @@
             </div>
 
             <div class="relative pt-32">
-                <div aria-hidden="true" class="absolute inset-0 top-60 grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-30">
-                    <div class="h-60 bg-gradient-to-br from-primary to-purple-400 blur-[106px] dark:from-blue-700"></div>
-                    <div class="h-40 bg-gradient-to-r from-cyan-400 to-sky-300 blur-[106px] dark:to-indigo-600"></div>
+                <div
+                    aria-hidden="true"
+                    class="absolute inset-0 top-60 grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-30"
+                >
+                    <div
+                        class="h-60 bg-gradient-to-br from-primary to-purple-400 blur-[106px] dark:from-blue-700"
+                    ></div>
+                    <div
+                        class="h-40 bg-gradient-to-r from-cyan-400 to-sky-300 blur-[106px] dark:to-indigo-600"
+                    ></div>
                 </div>
-                <div class="relative mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+                <div
+                    class="relative mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0"
+                >
                     <div class="text-center">
-                        <h2 class="text-3xl font-bold text-gray-800 dark:text-white xl:text-4xl">Every <span class="text-primary">comment</span> counts, leverage AI to see results</h2>
+                        <h2
+                            class="text-3xl font-bold text-gray-800 dark:text-white xl:text-4xl"
+                        >
+                            Every
+                            <span class="text-primary">comment</span>
+                            counts, leverage AI to see results
+                        </h2>
                     </div>
-                    <div class="mt-16 grid gap-8 sm:mx-auto sm:w-2/3 md:w-full md:grid-cols-2 lg:grid-cols-3">
-                        <div class="rounded-3xl border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:p-12">
+                    <div
+                        class="mt-16 grid gap-8 sm:mx-auto sm:w-2/3 md:w-full md:grid-cols-2 lg:grid-cols-3"
+                    >
+                        <div
+                            class="rounded-3xl border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:p-12"
+                        >
                             <div class="space-y-8 text-center">
-                                <img src="https://cdn-icons-png.flaticon.com/512/2327/2327640.png" class="mx-auto h-16 w-auto" width="512" height="512" alt="engagement illustration" />
+                                <img
+                                    src="https://cdn-icons-png.flaticon.com/512/2327/2327640.png"
+                                    class="mx-auto h-16 w-auto"
+                                    width="512"
+                                    height="512"
+                                    alt="engagement illustration"
+                                />
                                 <div class="space-y-6">
-                                    <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Increase engagement</h3>
-                                    <p class="text-gray-600 dark:text-gray-300">Understand audience preferences & trends to increase your content's impact. Make informed decisions from your audience by leveraging insights.</p>
+                                    <h3
+                                        class="text-2xl font-semibold text-gray-800 transition dark:text-white"
+                                    >
+                                        Increase engagement
+                                    </h3>
+                                    <p class="text-gray-600 dark:text-gray-300">
+                                        Understand audience preferences & trends
+                                        to increase your content's impact. Make
+                                        informed decisions from your audience by
+                                        leveraging insights.
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="rounded-3xl border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:p-12">
+                        <div
+                            class="rounded-3xl border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:p-12"
+                        >
                             <div class="space-y-8 text-center">
-                                <img src="https://cdn-icons-png.flaticon.com/512/1067/1067357.png" class="mx-auto h-16 w-auto" width="512" height="512" alt="growth illustration" />
+                                <img
+                                    src="https://cdn-icons-png.flaticon.com/512/1067/1067357.png"
+                                    class="mx-auto h-16 w-auto"
+                                    width="512"
+                                    height="512"
+                                    alt="growth illustration"
+                                />
                                 <div class="space-y-6">
-                                    <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Grow subscribers</h3>
-                                    <p class="text-gray-600 dark:text-gray-300">Identify growth opportunities, attract new followers, improve retention & increase monetisation, Spend more time creating content and less time crunching numbers.</p>
+                                    <h3
+                                        class="text-2xl font-semibold text-gray-800 transition dark:text-white"
+                                    >
+                                        Grow subscribers
+                                    </h3>
+                                    <p class="text-gray-600 dark:text-gray-300">
+                                        Identify growth opportunities, attract
+                                        new followers, improve retention &
+                                        increase monetisation, Spend more time
+                                        creating content and less time crunching
+                                        numbers.
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="rounded-3xl border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:p-12">
+                        <div
+                            class="rounded-3xl border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:p-12"
+                        >
                             <div class="space-y-8 text-center">
-                                <img src="https://cdn-icons-png.flaticon.com/512/1672/1672241.png" class="mx-auto h-16 w-auto" width="512" height="512" alt="monetisation illustration" />
+                                <img
+                                    src="https://cdn-icons-png.flaticon.com/512/1672/1672241.png"
+                                    class="mx-auto h-16 w-auto"
+                                    width="512"
+                                    height="512"
+                                    alt="monetisation illustration"
+                                />
                                 <div class="space-y-6">
-                                    <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Increase Monetisation</h3>
-                                    <p class="text-gray-600 dark:text-gray-300">Unlock earning potential. Find new monetisation opportunites directly from your audience. Get brand deals across the line with tailored insights.</p>
+                                    <h3
+                                        class="text-2xl font-semibold text-gray-800 transition dark:text-white"
+                                    >
+                                        Increase Monetisation
+                                    </h3>
+                                    <p class="text-gray-600 dark:text-gray-300">
+                                        Unlock earning potential. Find new
+                                        monetisation opportunites directly from
+                                        your audience. Get brand deals across
+                                        the line with tailored insights.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -311,108 +850,262 @@
 
         <section id="pricing" class="overflow-x-clip pt-32">
             <div class="mx-auto px-4 sm:px-12 xl:max-w-5xl xl:px-0">
-                <div class="relative z-10 text-center md:mx-auto md:w-5/6 lg:w-4/6">
-                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white md:text-4xl xl:text-5xl">Pricing</h2>
+                <div
+                    class="relative z-10 text-center md:mx-auto md:w-5/6 lg:w-4/6"
+                >
+                    <h2
+                        class="text-3xl font-bold text-gray-900 dark:text-white md:text-4xl xl:text-5xl"
+                    >
+                        Pricing
+                    </h2>
                 </div>
                 <div class="relative mt-20">
-                    <div aria-hidden="true" class="absolute inset-0 -bottom-20 -z-20 mx-auto mt-auto h-[50rem] w-[68rem] rounded-full bg-secondaryLight/50 blur-3xl dark:bg-secondary/40 md:m-auto"></div>
-                    <div class="m-auto items-center justify-center -space-y-4 md:flex md:space-y-0 md:-space-x-1">
-                        <div class="relative z-10 -mx-2 rounded-3xl border border-gray-100 bg-white shadow-2xl shadow-gray-600/10 dark:border-gray-700/60 dark:bg-gray-800 dark:shadow-none md:mx-0 md:w-6/12 lg:w-5/12">
+                    <div
+                        aria-hidden="true"
+                        class="absolute inset-0 -bottom-20 -z-20 mx-auto mt-auto h-[50rem] w-[68rem] rounded-full bg-secondaryLight/50 blur-3xl dark:bg-secondary/40 md:m-auto"
+                    ></div>
+                    <div
+                        class="m-auto items-center justify-center -space-y-4 md:flex md:space-y-0 md:-space-x-1"
+                    >
+                        <div
+                            class="relative z-10 -mx-2 rounded-3xl border border-gray-100 bg-white shadow-2xl shadow-gray-600/10 dark:border-gray-700/60 dark:bg-gray-800 dark:shadow-none md:mx-0 md:w-6/12 lg:w-5/12"
+                        >
                             <div class="flex flex-col gap-4 p-8 sm:p-12">
-                                <div class="flex items-center justify-center gap-4">
+                                <div
+                                    class="flex items-center justify-center gap-4"
+                                >
                                     <div>
-                                        <img src="https://cdn-icons-png.flaticon.com/512/6110/6110185.png" class="m-auto h-16 w-auto" alt="organization icon" width="512" height="512" />
+                                        <img
+                                            src="https://cdn-icons-png.flaticon.com/512/6110/6110185.png"
+                                            class="m-auto h-16 w-auto"
+                                            alt="organization icon"
+                                            width="512"
+                                            height="512"
+                                        />
                                     </div>
                                     <div>
-                                        <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">Creator</h3>
+                                        <h3
+                                            class="text-2xl font-semibold text-gray-800 dark:text-white"
+                                        >
+                                            Creator
+                                        </h3>
                                     </div>
                                 </div>
                                 <div class="relative flex justify-around">
                                     <div class="flex items-center">
-                                        <span class="mr-2 text-6xl font-bold leading-snug text-gray-800 dark:text-white">$17.99</span>
+                                        <span
+                                            class="mr-2 text-6xl font-bold leading-snug text-gray-800 dark:text-white"
+                                            >$17.99</span
+                                        >
                                         <div>
-                                            <span class="block text-xl font-bold text-gray-700 dark:text-white">USD/mo</span>
-                                            <span class="block text-lg font-bold text-primary dark:text-primaryLight">50% Off</span>
+                                            <span
+                                                class="block text-xl font-bold text-gray-700 dark:text-white"
+                                                >USD/mo</span
+                                            >
+                                            <span
+                                                class="block text-lg font-bold text-primary dark:text-primaryLight"
+                                                >50% Off</span
+                                            >
                                         </div>
                                     </div>
                                 </div>
-                                <ul class="w-fit space-y-4 py-4 text-gray-600 dark:text-gray-300">
+                                <ul
+                                    class="w-fit space-y-4 py-4 text-gray-600 dark:text-gray-300"
+                                >
                                     <li class="flex gap-x-3">
-                                        <div class="font-semibold text-gray-500">&check;</div>
+                                        <div
+                                            class="font-semibold text-gray-500"
+                                        >
+                                            &check;
+                                        </div>
                                         <div>1 user</div>
                                     </li>
                                     <li class="flex gap-x-3">
-                                        <div class="font-semibold text-gray-500">&check;</div>
-                                        <div>5 videos analysed monthly from sign up</div>
+                                        <div
+                                            class="font-semibold text-gray-500"
+                                        >
+                                            &check;
+                                        </div>
+                                        <div>
+                                            5 videos analysed monthly from sign
+                                            up
+                                        </div>
                                     </li>
                                     <li class="flex gap-x-3">
-                                        <div class="font-semibold text-gray-500">&check;</div>
+                                        <div
+                                            class="font-semibold text-gray-500"
+                                        >
+                                            &check;
+                                        </div>
                                         <div>Sentiment Analysis</div>
                                     </li>
                                     <li class="flex gap-x-3">
-                                        <div class="font-semibold text-gray-500">&check;</div>
+                                        <div
+                                            class="font-semibold text-gray-500"
+                                        >
+                                            &check;
+                                        </div>
                                         <div>Theme Analysis</div>
                                     </li>
                                     <li class="flex gap-x-3">
-                                        <div class="font-semibold text-gray-500">&check;</div>
-                                        <div>Feedback <span class="text-gray-400">(beta)</span></div>
+                                        <div
+                                            class="font-semibold text-gray-500"
+                                        >
+                                            &check;
+                                        </div>
+                                        <div>
+                                            Feedback
+                                            <span class="text-gray-400"
+                                                >(beta)</span
+                                            >
+                                        </div>
                                     </li>
                                     <li class="flex gap-x-3">
-                                        <div class="font-semibold text-gray-500">&check;</div>
-                                        <div>Video Ideas <span class="text-gray-400">(beta)</span></div>
+                                        <div
+                                            class="font-semibold text-gray-500"
+                                        >
+                                            &check;
+                                        </div>
+                                        <div>
+                                            Video Ideas
+                                            <span class="text-gray-400"
+                                                >(beta)</span
+                                            >
+                                        </div>
                                     </li>
                                 </ul>
-                                <a href="https://app.chatrlyst.com" class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 active:duration-75 active:before:scale-95 dark:before:bg-primaryLight">
-                                    <span class="relative text-base font-semibold text-white dark:text-dark">Sign up</span>
+                                <a
+                                    href="https://app.chatrlyst.com"
+                                    class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 active:duration-75 active:before:scale-95 dark:before:bg-primaryLight"
+                                >
+                                    <span
+                                        class="relative text-base font-semibold text-white dark:text-dark"
+                                        >Sign up</span
+                                    >
                                 </a>
                             </div>
                         </div>
 
-                        <div class="relative mx-4 rounded-3xl rounded-t-none border border-gray-700 bg-gray-800 shadow-2xl shadow-gray-600/10 dark:border-gray-100 dark:bg-white dark:shadow-none md:mx-0 md:w-6/12 md:rounded-l-none md:rounded-tl-none md:rounded-tr-3xl lg:w-7/12">
-                            <div class="relative p-6 pt-16 md:rounded-r-2xl md:p-8 md:pl-9 lg:p-16 lg:pl-[4.375rem]">
+                        <div
+                            class="relative mx-4 rounded-3xl rounded-t-none border border-gray-700 bg-gray-800 shadow-2xl shadow-gray-600/10 dark:border-gray-100 dark:bg-white dark:shadow-none md:mx-0 md:w-6/12 md:rounded-l-none md:rounded-tl-none md:rounded-tr-3xl lg:w-7/12"
+                        >
+                            <div
+                                class="relative p-6 pt-16 md:rounded-r-2xl md:p-8 md:pl-9 lg:p-16 lg:pl-[4.375rem]"
+                            >
                                 <div class="flex items-center gap-4">
                                     <div>
-                                        <img src="https://cdn-icons-png.flaticon.com/512/9078/9078993.png" class="m-auto h-16 w-auto" alt="organization icon" width="512" height="512" />
+                                        <img
+                                            src="https://cdn-icons-png.flaticon.com/512/9078/9078993.png"
+                                            class="m-auto h-16 w-auto"
+                                            alt="organization icon"
+                                            width="512"
+                                            height="512"
+                                        />
                                     </div>
                                     <div>
-                                        <h3 class="text-2xl font-semibold text-white dark:text-gray-800">Custom</h3>
-                                        <p class="mt-1 text-gray-400 dark:text-gray-600">Tailored to your needs</p>
+                                        <h3
+                                            class="text-2xl font-semibold text-white dark:text-gray-800"
+                                        >
+                                            Custom
+                                        </h3>
+                                        <p
+                                            class="mt-1 text-gray-400 dark:text-gray-600"
+                                        >
+                                            Tailored to your needs
+                                        </p>
                                     </div>
                                 </div>
 
-                                <p class="my-8 text-white dark:text-gray-700">Everything in Creator, plus we'll work with you to give you exactly what you need.</p>
+                                <p class="my-8 text-white dark:text-gray-700">
+                                    Everything in Creator, plus we'll work with
+                                    you to give you exactly what you need.
+                                </p>
 
-                                <div class="mb-8 grid grid-cols-2 rounded-3xl border border-gray-700 text-white dark:border-gray-200 dark:text-gray-600 [&>*]:border-gray-700 [&>*]:p-4 [&>*]:dark:border-gray-200">
-                                    <div class="flex justify-center gap-2 border-b">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 opacity-60">
-                                            <path fill-rule="evenodd" d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z" clip-rule="evenodd" />
+                                <div
+                                    class="mb-8 grid grid-cols-2 rounded-3xl border border-gray-700 text-white dark:border-gray-200 dark:text-gray-600 [&>*]:border-gray-700 [&>*]:p-4 [&>*]:dark:border-gray-200"
+                                >
+                                    <div
+                                        class="flex justify-center gap-2 border-b"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            class="h-5 w-5 opacity-60"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z"
+                                                clip-rule="evenodd"
+                                            />
                                         </svg>
                                         Historical Analysis
                                     </div>
-                                    <div class="flex justify-center gap-2 border-b border-l">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 opacity-60">
-                                            <path fill-rule="evenodd" d="M12.963 2.286a.75.75 0 00-1.071-.136 9.742 9.742 0 00-3.539 6.177A7.547 7.547 0 016.648 6.61a.75.75 0 00-1.152-.082A9 9 0 1015.68 4.534a7.46 7.46 0 01-2.717-2.248zM15.75 14.25a3.75 3.75 0 11-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 011.925-3.545 3.75 3.75 0 013.255 3.717z" clip-rule="evenodd" />
+                                    <div
+                                        class="flex justify-center gap-2 border-b border-l"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            class="h-5 w-5 opacity-60"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M12.963 2.286a.75.75 0 00-1.071-.136 9.742 9.742 0 00-3.539 6.177A7.547 7.547 0 016.648 6.61a.75.75 0 00-1.152-.082A9 9 0 1015.68 4.534a7.46 7.46 0 01-2.717-2.248zM15.75 14.25a3.75 3.75 0 11-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 011.925-3.545 3.75 3.75 0 013.255 3.717z"
+                                                clip-rule="evenodd"
+                                            />
                                         </svg>
                                         Direct Support
                                     </div>
                                     <div class="flex justify-center gap-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 opacity-60">
-                                            <path fill-rule="evenodd" d="M9.315 7.584C12.195 3.883 16.695 1.5 21.75 1.5a.75.75 0 01.75.75c0 5.056-2.383 9.555-6.084 12.436A6.75 6.75 0 019.75 22.5a.75.75 0 01-.75-.75v-4.131A15.838 15.838 0 016.382 15H2.25a.75.75 0 01-.75-.75 6.75 6.75 0 017.815-6.666zM15 6.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" clip-rule="evenodd" />
-                                            <path d="M5.26 17.242a.75.75 0 10-.897-1.203 5.243 5.243 0 00-2.05 5.022.75.75 0 00.625.627 5.243 5.243 0 005.022-2.051.75.75 0 10-1.202-.897 3.744 3.744 0 01-3.008 1.51c0-1.23.592-2.323 1.51-3.008z" />
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            class="h-5 w-5 opacity-60"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M9.315 7.584C12.195 3.883 16.695 1.5 21.75 1.5a.75.75 0 01.75.75c0 5.056-2.383 9.555-6.084 12.436A6.75 6.75 0 019.75 22.5a.75.75 0 01-.75-.75v-4.131A15.838 15.838 0 016.382 15H2.25a.75.75 0 01-.75-.75 6.75 6.75 0 017.815-6.666zM15 6.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z"
+                                                clip-rule="evenodd"
+                                            />
+                                            <path
+                                                d="M5.26 17.242a.75.75 0 10-.897-1.203 5.243 5.243 0 00-2.05 5.022.75.75 0 00.625.627 5.243 5.243 0 005.022-2.051.75.75 0 10-1.202-.897 3.744 3.744 0 01-3.008 1.51c0-1.23.592-2.323 1.51-3.008z"
+                                            />
                                         </svg>
                                         Bespoke Insights
                                     </div>
-                                    <div class="flex justify-center gap-2 border-l">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 opacity-60">
-                                            <path fill-rule="evenodd" d="M9.315 7.584C12.195 3.883 16.695 1.5 21.75 1.5a.75.75 0 01.75.75c0 5.056-2.383 9.555-6.084 12.436A6.75 6.75 0 019.75 22.5a.75.75 0 01-.75-.75v-4.131A15.838 15.838 0 016.382 15H2.25a.75.75 0 01-.75-.75 6.75 6.75 0 017.815-6.666zM15 6.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" clip-rule="evenodd" />
-                                            <path d="M5.26 17.242a.75.75 0 10-.897-1.203 5.243 5.243 0 00-2.05 5.022.75.75 0 00.625.627 5.243 5.243 0 005.022-2.051.75.75 0 10-1.202-.897 3.744 3.744 0 01-3.008 1.51c0-1.23.592-2.323 1.51-3.008z" />
+                                    <div
+                                        class="flex justify-center gap-2 border-l"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            class="h-5 w-5 opacity-60"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M9.315 7.584C12.195 3.883 16.695 1.5 21.75 1.5a.75.75 0 01.75.75c0 5.056-2.383 9.555-6.084 12.436A6.75 6.75 0 019.75 22.5a.75.75 0 01-.75-.75v-4.131A15.838 15.838 0 016.382 15H2.25a.75.75 0 01-.75-.75 6.75 6.75 0 017.815-6.666zM15 6.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z"
+                                                clip-rule="evenodd"
+                                            />
+                                            <path
+                                                d="M5.26 17.242a.75.75 0 10-.897-1.203 5.243 5.243 0 00-2.05 5.022.75.75 0 00.625.627 5.243 5.243 0 005.022-2.051.75.75 0 10-1.202-.897 3.744 3.744 0 01-3.008 1.51c0-1.23.592-2.323 1.51-3.008z"
+                                            />
                                         </svg>
                                         Export Results
                                     </div>
                                 </div>
 
-                                <a href="mailto:hello@chatrlyst.com?subject=Chatrlyst Custom enquiry&body=We're interested in taking our content to the next level" class="block rounded-2xl border border-gray-700 bg-gray-700/50 p-6 text-center dark:border-primary/20 dark:bg-primary/5 md:-mx-6 md:-mb-6 lg:-mx-12 lg:-mb-12">
-                                    <span class="text-xl font-semibold text-primaryLight dark:text-primary">Get in touch</span>
+                                <a
+                                    href="mailto:hello@chatrlyst.com?subject=Chatrlyst Custom enquiry&body=We're interested in taking our content to the next level"
+                                    class="block rounded-2xl border border-gray-700 bg-gray-700/50 p-6 text-center dark:border-primary/20 dark:bg-primary/5 md:-mx-6 md:-mb-6 lg:-mx-12 lg:-mb-12"
+                                >
+                                    <span
+                                        class="text-xl font-semibold text-primaryLight dark:text-primary"
+                                        >Get in touch</span
+                                    >
                                 </a>
                             </div>
                         </div>
@@ -423,15 +1116,45 @@
 
         <section id="company" class="pt-16 md:pt-32">
             <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
-                <div class="items-center justify-center space-y-6 md:flex md:gap-6 md:space-y-0">
+                <div
+                    class="items-center justify-center space-y-6 md:flex md:gap-6 md:space-y-0"
+                >
                     <div class="md:w-1/2 lg:w-3/5">
-                        <img class="h-full rounded-3xl object-cover md:-ml-8" src="./../images/hero-stats-login.webp" alt="tailus components" loading="lazy" width="1865" height="1750" />
+                        <img
+                            class="h-full rounded-3xl object-cover md:-ml-8"
+                            src="./../images/hero-stats-login.webp"
+                            alt="tailus components"
+                            loading="lazy"
+                            width="1865"
+                            height="1750"
+                        />
                     </div>
                     <div class="md:w-1/2">
-                        <span class="text-sm font-semibold uppercase tracking-widest text-primary dark:text-secondaryLight">Company</span>
-                        <h2 class="my-8 text-4xl font-bold text-gray-900 dark:text-white lg:text-5xl">Track your <span class="bg-gradient-to-r from-primaryLight to-secondaryLight bg-clip-text text-transparent">creator journey</span></h2>
-                        <p class="mb-4 text-gray-600 dark:text-gray-300">Personalised summary page</p>
-                        <p class="text-gray-600 dark:text-gray-300">Allows you to visualise your content journey over time. Watch the evolution of your video catalog, identify your best-performing content, and track trends as they develop. It's like having a time-traveling record of your content, providing you with insights to drive your content strategy forward.</p>
+                        <span
+                            class="text-sm font-semibold uppercase tracking-widest text-primary dark:text-secondaryLight"
+                            >Company</span
+                        >
+                        <h2
+                            class="my-8 text-4xl font-bold text-gray-900 dark:text-white lg:text-5xl"
+                        >
+                            Track your
+                            <span
+                                class="bg-gradient-to-r from-primaryLight to-secondaryLight bg-clip-text text-transparent"
+                                >creator journey</span
+                            >
+                        </h2>
+                        <p class="mb-4 text-gray-600 dark:text-gray-300">
+                            Personalised summary page
+                        </p>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Allows you to visualise your content journey over
+                            time. Watch the evolution of your video catalog,
+                            identify your best-performing content, and track
+                            trends as they develop. It's like having a
+                            time-traveling record of your content, providing you
+                            with insights to drive your content strategy
+                            forward.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -439,38 +1162,139 @@
 
         <section id="about" class="relative pt-32">
             <div class="relative mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
-                <h2 class="text-center text-4xl font-bold text-gray-800 dark:text-white xl:text-5xl">About us</h2>
-                <div class="mt-8 flex flex-wrap justify-center gap-8 sm:mx-auto sm:w-2/3 md:w-full md:children:basis-[calc(50%-2rem)] lg:children:basis-[calc(33%-2rem)]">
-                    <div class="flex flex-col items-center gap-y-4 rounded-3xl border border-gray-100 bg-white p-6 text-center shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2975/2975765.png" class="mx-auto h-14 w-auto" width="512" height="512" alt="person at computer" />
-                        <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Theo Taylor</h3>
-                        <p class="text-gray-600 dark:text-gray-300">We believe the creator economy is just getting started, and we want to empower creators to succeed. Our dedication to helping creators make the best content possible lies at the heart of everything we do.</p>
-                        <a href="https://www.linkedin.com/in/theotaylor25" target="blank" aria-label="github" class="text-gray-500 hover:text-primary dark:hover:text-primaryLight">
+                <h2
+                    class="text-center text-4xl font-bold text-gray-800 dark:text-white xl:text-5xl"
+                >
+                    About us
+                </h2>
+                <div
+                    class="mt-8 flex flex-wrap justify-center gap-8 sm:mx-auto sm:w-2/3 md:w-full md:children:basis-[calc(50%-2rem)] lg:children:basis-[calc(33%-2rem)]"
+                >
+                    <div
+                        class="flex flex-col items-center gap-y-4 rounded-3xl border border-gray-100 bg-white p-6 text-center shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none"
+                    >
+                        <img
+                            src="https://cdn-icons-png.flaticon.com/512/2975/2975765.png"
+                            class="mx-auto h-14 w-auto"
+                            width="512"
+                            height="512"
+                            alt="person at computer"
+                        />
+                        <h3
+                            class="text-2xl font-semibold text-gray-800 transition dark:text-white"
+                        >
+                            Theo Taylor
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Avid consumer of content and a decent Fortnite
+                            player. Big fan of a smoked chicken and brie
+                            sandwich. Favourite Creators: Andrew Santino, Olivia
+                            Rouyre and Indigo Traveller. Currently enjoying:
+                            ailaughatmyownjokes.
+                        </p>
+                        <a
+                            href="https://www.linkedin.com/in/theotaylor25"
+                            target="blank"
+                            aria-label="github"
+                            class="text-gray-500 hover:text-primary dark:hover:text-primaryLight"
+                        >
                             <span class="sr-only">LinkedIn</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 24 24">
-                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                fill="currentColor"
+                                class="bi bi-github"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                                />
                             </svg>
                         </a>
                     </div>
-                    <div class="flex flex-col items-center gap-y-4 rounded-3xl border border-gray-100 bg-white p-6 text-center shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3321/3321597.png" class="mx-auto h-14 w-auto" width="512" height="512" alt="person at computer" />
-                        <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Paul Rassie</h3>
-                        <p class="text-gray-600 dark:text-gray-300">We believe the creator economy is just getting started, and we want to empower creators to succeed. Our dedication to helping creators make the best content possible lies at the heart of everything we do.</p>
-                        <a href="https://www.linkedin.com/in/paul-rassie-088b55179" target="blank" aria-label="github" class="text-gray-500 hover:text-primary dark:hover:text-primaryLight">
+                    <div
+                        class="flex flex-col items-center gap-y-4 rounded-3xl border border-gray-100 bg-white p-6 text-center shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none"
+                    >
+                        <img
+                            src="https://cdn-icons-png.flaticon.com/512/2790/2790108.png"
+                            class="mx-auto h-14 w-auto"
+                            width="512"
+                            height="512"
+                            alt="person at computer"
+                        />
+                        <h3
+                            class="text-2xl font-semibold text-gray-800 transition dark:text-white"
+                        >
+                            Paul Rassie
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Outside of Chatrlyst, you'll find me out on the
+                            water fishing or at the beach. Favourite Creators:
+                            Lex Fridman, YBS Youngbloos and LEMMiNO. Currently
+                            enjoying: Beta Squad.
+                        </p>
+                        <a
+                            href="https://www.linkedin.com/in/paul-rassie-088b55179"
+                            target="blank"
+                            aria-label="github"
+                            class="text-gray-500 hover:text-primary dark:hover:text-primaryLight"
+                        >
                             <span class="sr-only">LinkedIn</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 24 24">
-                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                fill="currentColor"
+                                class="bi bi-github"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                                />
                             </svg>
                         </a>
                     </div>
-                    <div class="flex flex-col items-center gap-y-4 rounded-3xl border border-gray-100 bg-white p-6 text-center shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
-                        <img src="https://cdn-icons-png.flaticon.com/512/7053/7053332.png" class="mx-auto h-14 w-auto" width="512" height="512" alt="person at computer" />
-                        <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Sam Broadhead</h3>
-                        <p class="text-gray-600 dark:text-gray-300">We believe the creator economy is just getting started, and we want to empower creators to succeed. Our dedication to helping creators make the best content possible lies at the heart of everything we do.</p>
-                        <a href="https://www.linkedin.com/in/sam-broadhead" target="blank" aria-label="github" class="text-gray-500 hover:text-primary dark:hover:text-primaryLight">
+                    <div
+                        class="flex flex-col items-center gap-y-4 rounded-3xl border border-gray-100 bg-white p-6 text-center shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none"
+                    >
+                        <img
+                            src="https://cdn-icons-png.flaticon.com/512/7053/7053332.png"
+                            class="mx-auto h-14 w-auto"
+                            width="512"
+                            height="512"
+                            alt="person at computer"
+                        />
+                        <h3
+                            class="text-2xl font-semibold text-gray-800 transition dark:text-white"
+                        >
+                            Sam Broadhead
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            We believe the creator economy is just getting
+                            started, and we want to empower creators to succeed.
+                            Our dedication to helping creators make the best
+                            content possible lies at the heart of everything we
+                            do.
+                        </p>
+                        <a
+                            href="https://www.linkedin.com/in/sam-broadhead"
+                            target="blank"
+                            aria-label="github"
+                            class="text-gray-500 hover:text-primary dark:hover:text-primaryLight"
+                        >
                             <span class="sr-only">LinkedIn</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 24 24">
-                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                fill="currentColor"
+                                class="bi bi-github"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                                />
                             </svg>
                         </a>
                     </div>
@@ -478,37 +1302,135 @@
             </div>
         </section>
         <section id="values" class="relative pt-32">
-            <div aria-hidden="true" class="absolute inset-0 top-60 grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-30">
-                <div class="h-60 bg-gradient-to-br from-primary to-purple-400 blur-[106px] dark:from-blue-700"></div>
-                <div class="h-40 bg-gradient-to-r from-cyan-400 to-sky-300 blur-[106px] dark:to-indigo-600"></div>
+            <div
+                aria-hidden="true"
+                class="absolute inset-0 top-60 grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-30"
+            >
+                <div
+                    class="h-60 bg-gradient-to-br from-primary to-purple-400 blur-[106px] dark:from-blue-700"
+                ></div>
+                <div
+                    class="h-40 bg-gradient-to-r from-cyan-400 to-sky-300 blur-[106px] dark:to-indigo-600"
+                ></div>
             </div>
             <div class="relative mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
-                <h2 class="text-center text-4xl font-bold text-gray-800 dark:text-white xl:text-5xl">Our values</h2>
-                <div class="mt-8 flex flex-wrap justify-center gap-8 sm:mx-auto sm:w-2/3 md:w-full md:children:basis-[calc(50%-2rem)] lg:children:basis-[calc(33%-2rem)]">
-                    <div class="flex flex-col gap-y-4 rounded-3xl border border-gray-100 bg-white p-6 text-center shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
-                        <img src="https://cdn-icons-png.flaticon.com/512/6110/6110185.png" class="mx-auto h-14 w-auto" width="512" height="512" alt="person at computer" />
-                        <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Built for Creators, by Creators</h3>
-                        <p class="text-gray-600 dark:text-gray-300">We believe the creator economy is just getting started, and we want to empower creators to succeed. Our dedication to helping creators make the best content possible lies at the heart of everything we do.</p>
+                <h2
+                    class="text-center text-4xl font-bold text-gray-800 dark:text-white xl:text-5xl"
+                >
+                    Our values
+                </h2>
+                <div
+                    class="mt-8 flex flex-wrap justify-center gap-8 sm:mx-auto sm:w-2/3 md:w-full md:children:basis-[calc(50%-2rem)] lg:children:basis-[calc(33%-2rem)]"
+                >
+                    <div
+                        class="flex flex-col gap-y-4 rounded-3xl border border-gray-100 bg-white p-6 text-center shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none"
+                    >
+                        <img
+                            src="https://cdn-icons-png.flaticon.com/512/6110/6110185.png"
+                            class="mx-auto h-14 w-auto"
+                            width="512"
+                            height="512"
+                            alt="person at computer"
+                        />
+                        <h3
+                            class="text-2xl font-semibold text-gray-800 transition dark:text-white"
+                        >
+                            Built for Creators, by Creators
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            We believe the creator economy is just getting
+                            started, and we want to empower creators to succeed.
+                            Our dedication to helping creators make the best
+                            content possible lies at the heart of everything we
+                            do.
+                        </p>
                     </div>
-                    <div class="flex flex-col gap-y-4 rounded-3xl border border-gray-100 bg-white p-6 text-center shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
-                        <img src="https://cdn-icons-png.flaticon.com/512/7020/7020033.png" class="mx-auto h-14 w-auto" width="512" height="512" alt="robot and human high-5" />
-                        <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Human driven, Tech powered</h3>
-                        <p class="text-gray-600 dark:text-gray-300">We value integrity, empathy, kindness and inclusivity in this ever changing world. We acknowledge the symbiotic relationship between humanity and technology, and how it helps advance us forward collectively.</p>
+                    <div
+                        class="flex flex-col gap-y-4 rounded-3xl border border-gray-100 bg-white p-6 text-center shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none"
+                    >
+                        <img
+                            src="https://cdn-icons-png.flaticon.com/512/7020/7020033.png"
+                            class="mx-auto h-14 w-auto"
+                            width="512"
+                            height="512"
+                            alt="robot and human high-5"
+                        />
+                        <h3
+                            class="text-2xl font-semibold text-gray-800 transition dark:text-white"
+                        >
+                            Human driven, Tech powered
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            We value integrity, empathy, kindness and
+                            inclusivity in this ever changing world. We
+                            acknowledge the symbiotic relationship between
+                            humanity and technology, and how it helps advance us
+                            forward collectively.
+                        </p>
                     </div>
-                    <div class="flex flex-col gap-y-4 rounded-3xl border border-gray-100 bg-white p-6 text-center shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2216/2216976.png" class="mx-auto h-14 w-auto" width="512" height="512" alt="smiling traveler" />
-                        <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Smile in the face of a challenge</h3>
-                        <p class="text-gray-600 dark:text-gray-300">We've got big dreams and a long road ahead. It's important to tackle every challenge with a smile and enjoy the journey as a team.</p>
+                    <div
+                        class="flex flex-col gap-y-4 rounded-3xl border border-gray-100 bg-white p-6 text-center shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none"
+                    >
+                        <img
+                            src="https://cdn-icons-png.flaticon.com/512/2216/2216976.png"
+                            class="mx-auto h-14 w-auto"
+                            width="512"
+                            height="512"
+                            alt="smiling traveler"
+                        />
+                        <h3
+                            class="text-2xl font-semibold text-gray-800 transition dark:text-white"
+                        >
+                            Smile in the face of a challenge
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            We've got big dreams and a long road ahead. It's
+                            important to tackle every challenge with a smile and
+                            enjoy the journey as a team.
+                        </p>
                     </div>
-                    <div class="flex flex-col gap-y-4 rounded-3xl border border-gray-100 bg-white p-6 text-center shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2954/2954888.png" class="mx-auto h-14 w-auto" width="512" height="512" alt="broom sweeping" />
-                        <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Sweep the sheets</h3>
-                        <p class="text-gray-600 dark:text-gray-300">Take on tough tasks and feel empowered to work as a team to solve complex challenges. No job is too big or small for a team.</p>
+                    <div
+                        class="flex flex-col gap-y-4 rounded-3xl border border-gray-100 bg-white p-6 text-center shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none"
+                    >
+                        <img
+                            src="https://cdn-icons-png.flaticon.com/512/2954/2954888.png"
+                            class="mx-auto h-14 w-auto"
+                            width="512"
+                            height="512"
+                            alt="broom sweeping"
+                        />
+                        <h3
+                            class="text-2xl font-semibold text-gray-800 transition dark:text-white"
+                        >
+                            Sweep the sheets
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Take on tough tasks and feel empowered to work as a
+                            team to solve complex challenges. No job is too big
+                            or small for a team.
+                        </p>
                     </div>
-                    <div class="flex flex-col gap-y-4 rounded-3xl border border-gray-100 bg-white p-6 text-center shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3073/3073833.png" class="mx-auto h-14 w-auto" width="512" height="512" alt="fridge" />
-                        <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Don't be the fridge</h3>
-                        <p class="text-gray-600 dark:text-gray-300">Embrace the elegance of simplicity. We understand that innovation doesn't always require reinventing the wheel; sometimes it's best to build on what has gone before.</p>
+                    <div
+                        class="flex flex-col gap-y-4 rounded-3xl border border-gray-100 bg-white p-6 text-center shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none"
+                    >
+                        <img
+                            src="https://cdn-icons-png.flaticon.com/512/3073/3073833.png"
+                            class="mx-auto h-14 w-auto"
+                            width="512"
+                            height="512"
+                            alt="fridge"
+                        />
+                        <h3
+                            class="text-2xl font-semibold text-gray-800 transition dark:text-white"
+                        >
+                            Don't be the fridge
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-300">
+                            Embrace the elegance of simplicity. We understand
+                            that innovation doesn't always require reinventing
+                            the wheel; sometimes it's best to build on what has
+                            gone before.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -516,90 +1438,246 @@
 
         <section id="faqs" class="pt-32">
             <div class="mx-auto px-4 sm:px-12 xl:max-w-5xl xl:px-0">
-                <h2 class="mb-8 text-center text-2xl font-semibold text-gray-800 dark:text-white md:text-3xl xl:text-4xl">Frequently Asked Questions</h2>
-                <div class="divide-y divide-gray-200 border-y border-gray-200 dark:divide-gray-800 dark:border-gray-800">
+                <h2
+                    class="mb-8 text-center text-2xl font-semibold text-gray-800 dark:text-white md:text-3xl xl:text-4xl"
+                >
+                    Frequently Asked Questions
+                </h2>
+                <div
+                    class="divide-y divide-gray-200 border-y border-gray-200 dark:divide-gray-800 dark:border-gray-800"
+                >
                     <div>
                         <dl class="faq mx-auto max-w-2xl">
                             <dt class="text-lg">
-                                <button type="button" class="flex w-full items-start justify-between py-6 text-left text-gray-400" aria-controls="faq-0" data-active="false">
-                                    <span class="font-medium text-gray-900 dark:text-white">What is Chatrlyst?</span>
+                                <button
+                                    type="button"
+                                    class="flex w-full items-start justify-between py-6 text-left text-gray-400"
+                                    aria-controls="faq-0"
+                                    data-active="false"
+                                >
+                                    <span
+                                        class="font-medium text-gray-900 dark:text-white"
+                                        >What is Chatrlyst?</span
+                                    >
                                     <span class="ml-6 flex h-7 items-center">
-                                        <svg class="arrow-down h-6 w-6 rotate-0 transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                        <svg
+                                            class="arrow-down h-6 w-6 rotate-0 transform duration-300"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="currentColor"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                                            />
                                         </svg>
                                     </span>
                                 </button>
                             </dt>
-                            <dd class="faq-answer block max-h-0 overflow-hidden pr-12 duration-300 ease-in-out" id="faq-0">
-                                <p class="pb-6 text-base text-gray-600 dark:text-gray-400">We are a new Kiwi startup that connects content Creators with their audiences, showing Creators valuable insights based on their audiences engagement.</p>
+                            <dd
+                                class="faq-answer block max-h-0 overflow-hidden pr-12 duration-300 ease-in-out"
+                                id="faq-0"
+                            >
+                                <p
+                                    class="pb-6 text-base text-gray-600 dark:text-gray-400"
+                                >
+                                    We are a new Kiwi startup that connects
+                                    content Creators with their audiences,
+                                    showing Creators valuable insights based on
+                                    their audiences engagement.
+                                </p>
                             </dd>
                         </dl>
                     </div>
                     <div>
                         <dl class="faq mx-auto max-w-2xl">
                             <dt class="text-lg">
-                                <button type="button" class="flex w-full items-start justify-between py-6 text-left text-gray-400" aria-controls="faq-1" data-active="false">
-                                    <span class="font-medium text-gray-900 dark:text-white">How does Chatrlyst work?</span>
+                                <button
+                                    type="button"
+                                    class="flex w-full items-start justify-between py-6 text-left text-gray-400"
+                                    aria-controls="faq-1"
+                                    data-active="false"
+                                >
+                                    <span
+                                        class="font-medium text-gray-900 dark:text-white"
+                                        >How does Chatrlyst work?</span
+                                    >
                                     <span class="ml-6 flex h-7 items-center">
-                                        <svg class="arrow-down h-6 w-6 rotate-0 transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                        <svg
+                                            class="arrow-down h-6 w-6 rotate-0 transform duration-300"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="currentColor"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                                            />
                                         </svg>
                                     </span>
                                 </button>
                             </dt>
-                            <dd class="faq-answer block max-h-0 overflow-hidden pr-12 duration-300 ease-in-out" id="faq-1">
-                                <p class="pb-6 text-base text-gray-600 dark:text-gray-400">We use AI to analyse audience engagement to help Creators craft content that their audiences want.</p>
+                            <dd
+                                class="faq-answer block max-h-0 overflow-hidden pr-12 duration-300 ease-in-out"
+                                id="faq-1"
+                            >
+                                <p
+                                    class="pb-6 text-base text-gray-600 dark:text-gray-400"
+                                >
+                                    We use AI to analyse audience engagement to
+                                    help Creators craft content that their
+                                    audiences want.
+                                </p>
                             </dd>
                         </dl>
                     </div>
                     <div>
                         <dl class="faq mx-auto max-w-2xl">
                             <dt class="text-lg">
-                                <button type="button" class="flex w-full items-start justify-between py-6 text-left text-gray-400" aria-controls="faq-2" data-active="false">
-                                    <span class="font-medium text-gray-900 dark:text-white">How does Chatrlyst help Creators?</span>
+                                <button
+                                    type="button"
+                                    class="flex w-full items-start justify-between py-6 text-left text-gray-400"
+                                    aria-controls="faq-2"
+                                    data-active="false"
+                                >
+                                    <span
+                                        class="font-medium text-gray-900 dark:text-white"
+                                        >How does Chatrlyst help Creators?</span
+                                    >
                                     <span class="ml-6 flex h-7 items-center">
-                                        <svg class="arrow-down h-6 w-6 rotate-0 transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                        <svg
+                                            class="arrow-down h-6 w-6 rotate-0 transform duration-300"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="currentColor"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                                            />
                                         </svg>
                                     </span>
                                 </button>
                             </dt>
-                            <dd class="faq-answer block max-h-0 overflow-hidden pr-12 duration-300 ease-in-out" id="faq-2">
-                                <p class="pb-6 text-base text-gray-600 dark:text-gray-400">We help creators produce higher quality content that resonates with their audiences. This drives increased engagement, fosters channel growth and opens up avenues for monetisation.</p>
+                            <dd
+                                class="faq-answer block max-h-0 overflow-hidden pr-12 duration-300 ease-in-out"
+                                id="faq-2"
+                            >
+                                <p
+                                    class="pb-6 text-base text-gray-600 dark:text-gray-400"
+                                >
+                                    We help creators produce higher quality
+                                    content that resonates with their audiences.
+                                    This drives increased engagement, fosters
+                                    channel growth and opens up avenues for
+                                    monetisation.
+                                </p>
                             </dd>
                         </dl>
                     </div>
                     <div>
                         <dl class="faq mx-auto max-w-2xl">
                             <dt class="text-lg">
-                                <button type="button" class="flex w-full items-start justify-between py-6 text-left text-gray-400" aria-controls="faq-4" data-active="false">
-                                    <span class="font-medium text-gray-900 dark:text-white">Is Chatrlyst easy to use?</span>
+                                <button
+                                    type="button"
+                                    class="flex w-full items-start justify-between py-6 text-left text-gray-400"
+                                    aria-controls="faq-4"
+                                    data-active="false"
+                                >
+                                    <span
+                                        class="font-medium text-gray-900 dark:text-white"
+                                        >Is Chatrlyst easy to use?</span
+                                    >
                                     <span class="ml-6 flex h-7 items-center">
-                                        <svg class="arrow-down h-6 w-6 rotate-0 transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                        <svg
+                                            class="arrow-down h-6 w-6 rotate-0 transform duration-300"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="currentColor"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                                            />
                                         </svg>
                                     </span>
                                 </button>
                             </dt>
-                            <dd class="faq-answer block max-h-0 overflow-hidden pr-12 duration-300 ease-in-out" id="faq-4">
-                                <p class="pb-6 text-base text-gray-600 dark:text-gray-400">Yes! Our product is super easy to use with just a few clicks Creators can access detailed and intuitive dashboards of qualitative and quantitative insights.</p>
+                            <dd
+                                class="faq-answer block max-h-0 overflow-hidden pr-12 duration-300 ease-in-out"
+                                id="faq-4"
+                            >
+                                <p
+                                    class="pb-6 text-base text-gray-600 dark:text-gray-400"
+                                >
+                                    Yes! Our product is super easy to use with
+                                    just a few clicks Creators can access
+                                    detailed and intuitive dashboards of
+                                    qualitative and quantitative insights.
+                                </p>
                             </dd>
                         </dl>
                     </div>
                     <div>
                         <dl class="faq mx-auto max-w-2xl">
                             <dt class="text-lg">
-                                <button type="button" class="flex w-full items-start justify-between py-6 text-left text-gray-400" aria-controls="faq-5" data-active="false">
-                                    <span class="font-medium text-gray-900 dark:text-white">How many comments do I need to benefit from Chatrlyst?</span>
+                                <button
+                                    type="button"
+                                    class="flex w-full items-start justify-between py-6 text-left text-gray-400"
+                                    aria-controls="faq-5"
+                                    data-active="false"
+                                >
+                                    <span
+                                        class="font-medium text-gray-900 dark:text-white"
+                                        >How many comments do I need to benefit
+                                        from Chatrlyst?</span
+                                    >
                                     <span class="ml-6 flex h-7 items-center">
-                                        <svg class="arrow-down h-6 w-6 rotate-0 transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                        <svg
+                                            class="arrow-down h-6 w-6 rotate-0 transform duration-300"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="currentColor"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                                            />
                                         </svg>
                                     </span>
                                 </button>
                             </dt>
-                            <dd class="faq-answer block max-h-0 overflow-hidden pr-12 duration-300 ease-in-out" id="faq-5">
-                                <p class="pb-6 text-base text-gray-600 dark:text-gray-400">We work with Creators of all sizes! For best results we recommend an average of at least 25 comments per video.</p>
+                            <dd
+                                class="faq-answer block max-h-0 overflow-hidden pr-12 duration-300 ease-in-out"
+                                id="faq-5"
+                            >
+                                <p
+                                    class="pb-6 text-base text-gray-600 dark:text-gray-400"
+                                >
+                                    We work with Creators of all sizes! For best
+                                    results we recommend an average of at least
+                                    25 comments per video.
+                                </p>
                             </dd>
                         </dl>
                     </div>
@@ -607,16 +1685,36 @@
             </div>
         </section>
 
-        <footer class="border-t border-gray-100 pt-32 pb-8 dark:border-gray-800">
+        <footer
+            class="border-t border-gray-100 pt-32 pb-8 dark:border-gray-800"
+        >
             <div>
-                <div class="m-auto space-y-8 px-4 text-sm text-gray-600 dark:text-gray-400 sm:px-12 xl:max-w-6xl xl:px-0">
+                <div
+                    class="m-auto space-y-8 px-4 text-sm text-gray-600 dark:text-gray-400 sm:px-12 xl:max-w-6xl xl:px-0"
+                >
                     <div class="grid grid-cols-8 gap-6 md:gap-0">
                         <div class="col-span-8 md:col-span-2 lg:col-span-3">
-                            <div class="flex h-full items-center justify-center gap-6 md:items-start md:py-0">
-                                <a href="https://www.linkedin.com/company/chatrlyst" target="blank" aria-label="github" class="hover:text-primary dark:hover:text-primaryLight">
+                            <div
+                                class="flex h-full items-center justify-center gap-6 md:items-start md:py-0"
+                            >
+                                <a
+                                    href="https://www.linkedin.com/company/chatrlyst"
+                                    target="blank"
+                                    aria-label="github"
+                                    class="hover:text-primary dark:hover:text-primaryLight"
+                                >
                                     <span class="sr-only">LinkedIn</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 24 24">
-                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        fill="currentColor"
+                                        class="bi bi-github"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                                        />
                                     </svg>
                                 </a>
                                 <a href="./privacy.html">Privacy</a>
@@ -624,9 +1722,14 @@
                             </div>
                         </div>
                         <div class="col-span-8 md:col-span-6 lg:col-span-5">
-                            <div class="flex flex-col text-center md:flex-row md:justify-between md:pl-16">
+                            <div
+                                class="flex flex-col text-center md:flex-row md:justify-between md:pl-16"
+                            >
                                 <div>Made with 🖤 in Aotearoa</div>
-                                <div>&copy; 2023 Chatrlyst Limited. All rights reserved.</div>
+                                <div>
+                                    &copy; 2023 Chatrlyst Limited. All rights
+                                    reserved.
+                                </div>
                             </div>
                         </div>
                     </div>
