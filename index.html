@@ -143,6 +143,23 @@
                 </div>
             </nav>
         </header>
+        <style>
+            #bar {
+                animation: bar 1s ease-in-out;
+                animation-delay: 0.3s;
+            }
+            @keyframes bar {
+                0% {
+                    opacity: 0.6;
+                    width: 0;
+                }
+
+                to {
+                    opacity: 1;
+                    width: 100%;
+                }
+            }
+        </style>
 
         <section id="home" class="pt-32 sm:pt-40 md:pt-48">
             <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
@@ -152,33 +169,29 @@
                     >
                         <span
                             class="relative bg-gradient-to-l from-primary to-secondaryLight bg-clip-text text-transparent dark:from-primaryLight dark:to-secondaryLight"
-                            >Grow</span
+                            >Transform</span
                         >
-                        your audience by elevating your
+                        your comments into
                         <span class="relative">
                             <span
                                 class="relative bg-gradient-to-r from-primary to-secondaryLight bg-clip-text text-transparent dark:from-primaryLight dark:to-secondaryLight"
-                                >Content</span
+                                >Actionable Insights</span
                             >.
-                            <svg
-                                class="absolute inset-x-0 w-full animate-pulse"
-                                height="22"
-                                viewBox="0 0 283 22"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M1.24715 19.3744C72.4051 10.3594 228.122 -4.71194 281.724 7.12332"
-                                    stroke="url(#paint0_linear_18_19)"
-                                    stroke-width="4"
-                                ></path>
-                                <defs>
-                                    <linearGradient id="paint0_linear_18_19" x1="282" y1="5.49999" x2="40" y2="13" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#00FFF0"></stop>
-                                        <stop offset="1" stop-color="#00A3FF"></stop>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
+                            <div class="absolute inset-x-0 -z-10 overflow-hidden" id="bar">
+                                <svg viewBox="0 0 562 22" height="22" overflow="hidden" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.24715 19.3744C72.4051 10.3594 228.122 -4.71194 560.724 7.12332"
+                                        stroke="url(#paint0_linear_18_19)"
+                                        stroke-width="4"
+                                    ></path>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_18_19" x1="560" y1="5.49999" x2="4" y2="13" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#00FFF0"></stop>
+                                            <stop offset="1" stop-color="#00A3FF"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
                         </span>
                     </h1>
 
@@ -186,7 +199,8 @@
                         <div class="text-center sm:mx-auto sm:w-11/12 md:mt-12 md:w-4/5 lg:mr-auto lg:mt-0 lg:w-6/12 lg:text-left">
                             <p class="mt-12 text-lg text-gray-600 dark:text-gray-300 sm:text-xl">
                                 <span class="text-primary">AI-Driven</span>
-                                analytics from your comment section. Unleash your content potential with just a few clicks.<br /><br />
+                                insights for Creators in just a few clicks. Dive deeper than ever into your comment section to find insights like never
+                                before.<br /><br />
                                 We believe the Creator economy is just getting started, and we want to empower Creators to succeed. Our dedication to helping
                                 Creators make the best content possible lies at the heart of everything we do.
                             </p>
@@ -236,13 +250,9 @@
             <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                 <div class="text-center">
                     <h2 class="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl xl:text-5xl">
-                        Unleash your content potential with
-                        <div class="mt-2 text-primary">AI-Driven insights</div>
+                        Helping creators succeed in a
+                        <div class="mt-2 text-primary">competitive landscape</div>
                     </h2>
-                    <p class="mx-auto mt-6 text-gray-700 dark:text-gray-300 md:w-3/4 lg:w-3/5">
-                        Being a Creator is tough. Chatrlyst helps you create content that truly resonates. Driving engagement, fostering channel growth and
-                        increasing monetisation opportunities.
-                    </p>
 
                     <div class="relative">
                         <div aria-hidden="true" class="absolute inset-0 top-60 grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-30">
@@ -258,6 +268,46 @@
                                 >
                                     <div class="space-y-6 text-center">
                                         <img
+                                            src="https://cdn-icons-png.flaticon.com/512/1067/1067357.png"
+                                            class="mx-auto h-16 w-auto"
+                                            width="512"
+                                            height="512"
+                                            alt="growth illustration"
+                                        />
+                                        <div class="space-y-4">
+                                            <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Grow Subscribers</h3>
+                                            <p class="text-gray-600 dark:text-gray-300">
+                                                Focus on creating compelling content while we provide the analytics that help to grow your subscriber base.
+                                                Discover key strategies and trends for audience growth.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="rounded-3xl border border-gray-100 bg-white p-6 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none"
+                                >
+                                    <div class="space-y-6 text-center">
+                                        <img
+                                            src="https://cdn-icons-png.flaticon.com/512/1672/1672241.png"
+                                            class="mx-auto h-16 w-auto"
+                                            width="512"
+                                            height="512"
+                                            alt="monetisation illustration"
+                                        />
+                                        <div class="space-y-4">
+                                            <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Increase Monetisation</h3>
+                                            <p class="text-gray-600 dark:text-gray-300">
+                                                Unlock your full earning potential from targeted audience reactions. Track and monitor how your audience feels
+                                                about brands and products.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="rounded-3xl border border-gray-100 bg-white p-6 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none"
+                                >
+                                    <div class="space-y-6 text-center">
+                                        <img
                                             src="https://cdn-icons-png.flaticon.com/512/1584/1584942.png"
                                             class="mx-auto h-16 w-auto"
                                             width="512"
@@ -267,8 +317,8 @@
                                         <div class="space-y-4">
                                             <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Save Time</h3>
                                             <p class="text-gray-600 dark:text-gray-300">
-                                                Save time by not having to read all of your comments. Let us do the heavy lifting for you and turn hours of
-                                                scrolling into just a few minutes with our analysis.
+                                                In a couple of clicks, access insights that were previously unattainable. Streamline the way you devise new
+                                                content and find brand partnerships.
                                             </p>
                                         </div>
                                     </div>
@@ -288,52 +338,13 @@
                                         <div class="space-y-4">
                                             <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Increase Engagement</h3>
                                             <p class="text-gray-600 dark:text-gray-300">
-                                                Understand audience preferences and trends to increase your content's impact. Make informed decisions from your
-                                                audience by leveraging valuable insights.
+                                                Understand your audience&apos;s preferences and themes. Make informed decisions from your audience by leveraging
+                                                valuable insights.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div
-                                    class="rounded-3xl border border-gray-100 bg-white p-6 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none"
-                                >
-                                    <div class="space-y-6 text-center">
-                                        <img
-                                            src="https://cdn-icons-png.flaticon.com/512/1067/1067357.png"
-                                            class="mx-auto h-16 w-auto"
-                                            width="512"
-                                            height="512"
-                                            alt="growth illustration"
-                                        />
-                                        <div class="space-y-4">
-                                            <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Grow Subscribers</h3>
-                                            <p class="text-gray-600 dark:text-gray-300">
-                                                Identify growth opportunities, attract new followers, improve retention and increase monetisation. Spend more
-                                                time creating content and less time crunching numbers.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="rounded-3xl border border-gray-100 bg-white p-6 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none"
-                                >
-                                    <div class="space-y-6 text-center">
-                                        <img
-                                            src="https://cdn-icons-png.flaticon.com/512/1672/1672241.png"
-                                            class="mx-auto h-16 w-auto"
-                                            width="512"
-                                            height="512"
-                                            alt="monetisation illustration"
-                                        />
-                                        <div class="space-y-4">
-                                            <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Increase Monetisation</h3>
-                                            <p class="text-gray-600 dark:text-gray-300">
-                                                Unlock your full earning potential. Find new monetisation opportunities directly from your audience. Get brand
-                                                deals across the line with tailored insights.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+
                                 <div
                                     class="rounded-3xl border border-gray-100 bg-white p-6 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none"
                                 >
