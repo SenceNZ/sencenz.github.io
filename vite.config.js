@@ -10,6 +10,7 @@ export default defineConfig({
                 privacy: resolve(__dirname, "privacy.html"),
                 terms: resolve(__dirname, "terms.html"),
                 creators: resolve(__dirname, "creators.html"),
+                "creator-agency": resolve(__dirname, "creator-agency.html"),
             },
         },
     },
