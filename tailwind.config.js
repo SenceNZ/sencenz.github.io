@@ -19,7 +19,7 @@ module.exports = {
                 darker: "#090E1A",
             },
             animation: {
-                marquee: "marquee 30s linear infinite",
+                marquee: "marquee 25s linear infinite",
             },
             keyframes: {
                 marquee: {
