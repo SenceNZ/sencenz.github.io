@@ -18,9 +18,40 @@ module.exports = {
                 dark: "#0A101E",
                 darker: "#090E1A",
             },
+            animation: {
+                marquee: "marquee 30s linear infinite",
+                marquee2: "marquee2 30s linear infinite",
+            },
+            keyframes: {
+                marquee: {
+                    "0%": { transform: "translateX(0%)" },
+                    "100%": { transform: "translateX(-100%)" },
+                },
+                marquee2: {
+                    "0%": { transform: "translateX(100%)" },
+                    "100%": { transform: "translateX(0%)" },
+                },
+            },
         },
     },
-    variantOrder: ["first", "last", "odd", "even", "visited", "checked", "empty", "read-only", "group-hover", "group-focus", "focus-within", "hover", "focus", "focus-visible", "active", "disabled"],
+    variantOrder: [
+        "first",
+        "last",
+        "odd",
+        "even",
+        "visited",
+        "checked",
+        "empty",
+        "read-only",
+        "group-hover",
+        "group-focus",
+        "focus-within",
+        "hover",
+        "focus",
+        "focus-visible",
+        "active",
+        "disabled",
+    ],
     plugins: [
         plugin(function ({ addVariant }) {
             addVariant("children", "&>*");
