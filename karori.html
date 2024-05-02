@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="chatrlyst sentiment themes ai" />
+        <title>Chatrlyst</title>
+    </head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H2MDB79WTH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-H2MDB79WTH");
+    </script>
+    <body class="min-h-screen overflow-x-hidden bg-white selection:bg-primary/10 selection:text-primary dark:bg-gray-900">
+        <header>
+            <nav
+                id="navbar"
+                class="fixed inset-x-0 z-20 w-full border-b border-gray-300 bg-white/80 shadow-sm backdrop-blur dark:border-gray-700/30 dark:bg-gray-900/80"
+            >
+                <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+                    <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-4">
+                        <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
+                            <a href="./#" aria-label="ampire logo" class="nav-link flex items-center space-x-2">
+                                <img src="/favicon.ico" alt="Logo" class="block h-8 w-8 dark:brightness-200 md:hidden" /><img
+                                    src="/logo_w_text.png"
+                                    alt="Logo"
+                                    class="hidden h-10 dark:brightness-200 md:block"
+                            /></a>
+                            <button aria-label="humburger" id="hamburger" class="relative -mr-6 p-6 lg:hidden">
+                                <div aria-hidden="true" id="line" class="m-auto h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300"></div>
+                                <div
+                                    aria-hidden="true"
+                                    id="line2"
+                                    class="m-auto mt-2 h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300"
+                                ></div>
+                            </button>
+                        </div>
+                        <div
+                            aria-hidden="true"
+                            id="layer"
+                            class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition duration-500 dark:bg-darker/70 lg:hidden"
+                        ></div>
+                        <div
+                            id="navlinks"
+                            class="invisible absolute left-0 top-full z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-auto lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none dark:lg:bg-transparent"
+                        >
+                            <div class="text-gray-600 dark:text-gray-300 lg:pr-4">
+                                <ul class="space-y-6 font-medium tracking-wide lg:flex lg:space-y-0">
+                                    <li>
+                                        <a href="./#" class="nav-link block transition hover:text-primary dark:hover:text-primaryLight lg:px-4">
+                                            <span>Social Agencies</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./creator-agency" class="nav-link block transition hover:text-primary dark:hover:text-primaryLight lg:px-4">
+                                            <span>Creator Agencies</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./creators" class="nav-link block transition hover:text-primary dark:hover:text-primaryLight lg:px-4">
+                                            <span>Creators</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div
+                                class="-ml-1 mt-12 flex w-full flex-col space-y-2 border-primary/10 dark:border-gray-700 sm:flex-row md:w-max lg:mr-6 lg:mt-0 lg:space-y-0 lg:border-l lg:pl-6"
+                            >
+                                <a
+                                    href="https://app.chatrlyst.com"
+                                    class="relative ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-primaryLight sm:px-4 lg:before:border lg:before:border-gray-200 lg:before:bg-gray-100 lg:dark:before:bg-gray-800"
+                                >
+                                    <span class="relative font-medium text-white dark:text-gray-900 lg:text-primary lg:dark:text-white">Log in</span>
+                                </a>
+                            </div>
+                            <button
+                                aria-label="switch theme"
+                                class="switcher group relative hidden h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 lg:flex"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="transistion relative m-auto hidden h-5 w-5 fill-gray-500 duration-300 group-hover:rotate-180 group-hover:fill-yellow-400 dark:block dark:fill-gray-300"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                        clip-rule="evenodd"
+                                    ></path>
+                                </svg>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="transistion relative m-auto h-5 w-5 fill-gray-500 duration-300 group-hover:-rotate-90 group-hover:fill-blue-900 dark:hidden"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                >
+                                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="fixed right-14 top-3 z-20 sm:right-24 lg:hidden">
+                            <button
+                                aria-label="switche theme"
+                                class="switcher group relative flex h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="transistion relative m-auto hidden h-5 w-5 fill-gray-500 duration-300 group-hover:rotate-180 group-hover:fill-yellow-400 dark:block dark:fill-gray-300"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                        clip-rule="evenodd"
+                                    ></path>
+                                </svg>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="transistion relative m-auto h-5 w-5 fill-gray-500 duration-300 group-hover:-rotate-90 group-hover:fill-blue-900 dark:hidden"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                >
+                                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="py-20 md:pt-32">
+            <div class="mx-auto px-4 sm:px-12 xl:max-w-5xl xl:px-0">
+                <div class="relative z-10 md:mx-auto">
+                    <h1 class="relative border-b-2 pb-4 text-2xl font-medium dark:text-white lg:text-4xl">
+                        How Karori Dairy used <span class="text-primary">Chatrlyst</span> to boost its TikTok following by 30% and launch a YouTube channel, in
+                        just 2 months
+                    </h1>
+                    <div class="mt-12 grid text-left text-gray-700 dark:text-gray-300">
+                        <div class="mb-10 border-l-2 pl-4 text-xl font-light">
+                            "Before Chatrlyst, we had about 30,000 followers, and in just two months, we've soared past 40,000. We're not only producing better
+                            content but also saving a significant amount of time in the process"
+                        </div>
+                        <div class="mb-12 grid gap-2 leading-5 lg:grid-cols-[8rem_1fr] lg:gap-8">
+                            <img src="karori/karori.jpg" class="rounded-lg" />
+                            <div>
+                                Lukas Halikias and Rithwick Negi, the dynamic duo behind the popular Karori Dairy TikTok channel, achieved an impressive 30%
+                                increase in followers and successfully launched a YouTube series within merely two months of utilising Chatrlyst. Since its
+                                inception on TikTok in August 2022, 'The First Dairy' has amassed nearly 20 million views, 40,000 followers, and 1.2 million
+                                likes by March 2024.
+                            </div>
+                        </div>
+                        <div class="mb-4 text-xl font-medium lg:text-2xl">The Journey to a 30% increase in followers in two months</div>
+                        <div>
+                            Chatrlyst enabled Karori Dairy to swiftly pinpoint opportunities directly from their audience's feedback. The AI's insightful
+                            analysis showed them that their audience was highly engaged with sports, in particular football. Inspiring them to collaborate with
+                            well-known Wellington sports teams like the Hurricanes and Phoenix, leveraging their connections to enhance content relevancy and
+                            engagement. <br /><br />This audience-inspired content strategy led to
+                            <span class="font-semibold">1.5M views, 120k likes, and 2k comments</span> along with a
+                            <span class="font-semibold">30% increase in followers</span> in just <span class="font-semibold">2 months</span>.
+                        </div>
+                        <div class="mb-12 mt-6 flex justify-center"><img src="karori/saved.png" class="rounded drop-shadow-2xl lg:w-3/4" /></div>
+                        <div class="my-6 border-l-2 pl-4 text-xl font-light">
+                            "The first time I tried Chatrlyst, I was astounded. It felt like it was reading my mind. I immediately rang Paul (Co-founder) and
+                            excitedly shared my amazement over the phone" - Lukas Halikias.
+                        </div>
+                        <div class="mt-8 text-xl font-medium lg:text-2xl">But how do they measure success?</div>
+                        <div class="my-6 border-l-2 pl-4 text-xl font-light">
+                            "The ability to launch our new content series and quickly evaluate what resonates allows us to seize any emerging opportunities
+                            promptly," - Lukas Halikias
+                        </div>
+                        <div>
+                            This agile approach to content creation and adjustment is key to their continued success and growth, building an engaged audience
+                            that goes beyond just TikTok trends.
+                        </div>
+                        <div class="mb-12 mt-6 flex justify-center"><img src="karori/videos.png" class="rounded drop-shadow-2xl lg:w-3/4" /></div>
+                        <div class="mb-2 mt-10 text-2xl font-medium">What Lies Ahead for Karori Dairy?</div>
+                        <div>
+                            Lukas and Rithwick are not resting on their laurels; they have embarked on a new venture, establishing a creative agency,
+                            <a href="https://www.youtube.com/@markhitnz">MarkHit</a>. Their mission is to bring viral content creation to major brands and
+                            television, fuelled by the insights and efficiency gained from Chatrlyst.
+                        </div>
+                        <div class="mb-2 mt-10 text-2xl font-medium">What is Chatrlyst?</div>
+                        <div>
+                            If you're looking to grow your followers and find new monetisation opportunities, Chatrlyst might be right for you. Learn more about
+                            the product <a class="font-medium text-primary" href="./creators#product">here</a>, or sign up for free and give it a try
+                            <a class="font-medium text-primary" href="https://app.chatrlyst.com/signup">here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="border-t border-gray-100 pb-8 pt-32 dark:border-gray-800">
+            <div>
+                <div class="m-auto space-y-8 px-4 text-sm text-gray-600 dark:text-gray-400 sm:px-12 xl:max-w-6xl xl:px-0">
+                    <div class="grid grid-cols-8 gap-6 md:gap-0">
+                        <div class="col-span-8 md:col-span-2 lg:col-span-3">
+                            <div class="flex h-full items-center justify-center gap-6 md:items-start md:py-0">
+                                <a
+                                    href="https://www.linkedin.com/company/chatrlyst"
+                                    target="blank"
+                                    aria-label="github"
+                                    class="hover:text-primary dark:hover:text-primaryLight"
+                                >
+                                    <span class="sr-only">LinkedIn</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 24 24">
+                                        <path
+                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                                        />
+                                    </svg>
+                                </a>
+                                <a href="./privacy">Privacy</a>
+                                <a href="./terms">Terms</a>
+                            </div>
+                        </div>
+                        <div class="col-span-8 md:col-span-6 lg:col-span-5">
+                            <div class="flex flex-col text-center md:flex-row md:justify-between md:pl-16">
+                                <div>Made with 🖤 in Aotearoa</div>
+                                <div>&copy; 2024 Chatrlyst Limited. All rights reserved.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script type="module" src="./app.js"></script>
+    </body>
+</html>
