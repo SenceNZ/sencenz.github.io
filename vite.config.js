@@ -11,7 +11,7 @@ export default defineConfig({
                 terms: resolve(__dirname, "terms.html"),
                 creators: resolve(__dirname, "creators.html"),
                 "social-agency": resolve(__dirname, "social-agency.html"),
-                "creator-agency": resolve(__dirname, "creator-agency.html"),
+                "talent-agency": resolve(__dirname, "talent-agency.html"),
                 "karori-dairy": resolve(__dirname, "karori-dairy.html"),
             },
         },
