@@ -3,6 +3,7 @@ import { resolve } from "path";
 import { defineConfig } from "vite";
 
 export default defineConfig({
+    server: { port: 5174 },
     build: {
         rollupOptions: {
             input: {
@@ -13,6 +14,7 @@ export default defineConfig({
                 "social-agency": resolve(__dirname, "social-agency.html"),
                 "talent-agency": resolve(__dirname, "talent-agency.html"),
                 "karori-dairy": resolve(__dirname, "karori-dairy.html"),
+                markhit: resolve(__dirname, "markhit.html"),
             },
         },
     },
